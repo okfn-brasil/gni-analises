@@ -11,7 +11,7 @@ run_app <- function(
   onStart = NULL,
   options = list(), 
   enableBookmarking = NULL,
-  uiPattern = "/",
+  uiPattern = '/',
   ...
 ) {
   with_golem_options(

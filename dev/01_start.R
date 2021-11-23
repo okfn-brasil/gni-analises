@@ -39,12 +39,6 @@ usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge('Experimental')
 usethis::use_news_md(open = FALSE)
 
-## Use git ----
-usethis::use_github(
-  organisation = 'quaestiotech',
-  private = TRUE
-)
-
 ## Init Testing Infrastructure ----
 ## Create a template for tests
 golem::use_recommended_tests()

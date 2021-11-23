@@ -4,6 +4,6 @@
 dev_history.R
 ^dev$
 $run_dev.*
-gnir-viz.sublime-project
+^.*sublime
 ^LICENSE\.md$
 ^README\.Rmd$

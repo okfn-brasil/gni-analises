@@ -7,7 +7,7 @@
 #' @noRd
 #' 
 #' @examples
-#' list_to_li(c("a","b"))
+#' list_to_li(c('a','b'))
 #'
 #' @importFrom shiny tags tagAppendAttributes tagList
 list_to_li <- function(list, class = NULL){
@@ -45,7 +45,7 @@ list_to_li <- function(list, class = NULL){
 #' @noRd
 #' 
 #' @examples 
-#' list_to_p(c("This is the first paragraph", "this is the second paragraph"))
+#' list_to_p(c('This is the first paragraph', 'this is the second paragraph'))
 #' 
 #' @importFrom shiny tags tagAppendAttributes tagList
 #' 
@@ -83,7 +83,7 @@ named_to_li <- function(list, class = NULL){
       function(x, y){
         tags$li(
           HTML(
-            sprintf("<b>%s:</b> %s", y, x)
+            sprintf('<b>%s:</b> %s', y, x)
           )
         )
       },
@@ -97,7 +97,7 @@ named_to_li <- function(list, class = NULL){
       function(x, y){
         tags$li(
           HTML(
-            sprintf("<b>%s:</b> %s", y, x)
+            sprintf('<b>%s:</b> %s', y, x)
           )
         )
       },
@@ -127,8 +127,8 @@ named_to_li <- function(list, class = NULL){
 #' @noRd
 #' 
 #' @examples
-#' a <- shiny::tags$p(src = "plop", "pouet")
-#' tagRemoveAttributes(a, "src")
+#' a <- shiny::tags$p(src = 'plop', 'pouet')
+#' tagRemoveAttributes(a, 'src')
 tagRemoveAttributes <- function(tag, ...) {
   attrs <- as.character(list(...))
   for (i in seq_along(attrs)) {
@@ -146,9 +146,9 @@ tagRemoveAttributes <- function(tag, ...) {
 #' 
 #' @examples
 #' ## Hide
-#' a <- shiny::tags$p(src = "plop", "pouet")
+#' a <- shiny::tags$p(src = 'plop', 'pouet')
 #' undisplay(a)
-#' b <- shiny::actionButton("go_filter", "go")
+#' b <- shiny::actionButton('go_filter', 'go')
 #' undisplay(b)
 #' 
 #' @importFrom shiny tagList
@@ -156,14 +156,14 @@ undisplay <- function(tag) {
   # if not already hidden
   if (
     !is.null(tag$attribs$style) && 
-    !grepl("display:\\s+none", tag$attribs$style)
+    !grepl('display:\\s+none', tag$attribs$style)
   ) {
     tag$attribs$style <- paste(
-      "display: none;", 
+      'display: none;',
       tag$attribs$style
     )
   } else {
-    tag$attribs$style <- "display: none;"
+    tag$attribs$style <- 'display: none;'
   }
   tag
 }
@@ -172,11 +172,11 @@ undisplay <- function(tag) {
 display <- function(tag) {
   if (
     !is.null(tag$attribs$style) && 
-    grepl("display:\\s+none", tag$attribs$style)
+    grepl('display:\\s+none', tag$attribs$style)
   ) {
     tag$attribs$style <- gsub(
-      "(\\s)*display:(\\s)*none(\\s)*(;)*(\\s)*", 
-      "", 
+      '(\\s)*display:(\\s)*none(\\s)*(;)*(\\s)*',
+      '',
       tag$attribs$style
     )
   }
@@ -191,7 +191,7 @@ display <- function(tag) {
 #' 
 #' @importFrom shiny tags
 jq_hide <- function(id) {
-  tags$script(sprintf("$('#%s').hide()", id))
+  tags$script(sprintf('$("#%s").hide()', id))
 }
 
 #' Add a red star at the end of the text
@@ -205,7 +205,7 @@ jq_hide <- function(id) {
 #' @noRd
 #' 
 #' @examples
-#' with_red_star("Enter your name here")
+#' with_red_star('Enter your name here')
 #' 
 #' @importFrom shiny tags HTML
 with_red_star <- function(text) {
@@ -214,7 +214,7 @@ with_red_star <- function(text) {
       paste0(
         text,
         shiny::tags$span(
-          style = "color:red", "*"
+          style = 'color:red', '*'
         )
       )
     )
@@ -235,7 +235,7 @@ with_red_star <- function(text) {
 #' 
 #' @importFrom shiny HTML
 rep_br <- function(times = 1) {
-  HTML(rep("<br/>", times = times))
+  HTML(rep('<br/>', times = times))
 }
 
 #' Create an url
@@ -247,7 +247,7 @@ rep_br <- function(times = 1) {
 #' @noRd
 #'
 #' @examples
-#' enurl("https://www.thinkr.fr", "ThinkR")
+#' enurl('https://www.thinkr.fr', 'ThinkR')
 #' 
 #' @importFrom shiny tags
 enurl <- function(url, text){
@@ -322,15 +322,15 @@ col_1 <- function(...){
 #' if (interactive()) {
 #'  library(shiny)
 #'  
-#'  link <- a(href = "#", "My super link", style = "color: lightblue;") 
+#'  link <- a(href = '#', 'My super link', style = 'color: lightblue;')
 #'  
 #'  ui <- fluidPage(
-#'   make_action_button(link, inputId = "mylink")
+#'   make_action_button(link, inputId = 'mylink')
 #'  )
 #'  
 #'  server <- function(input, output, session) {
 #'    observeEvent(input$mylink, {
-#'     showNotification("Pouic!")
+#'     showNotification('Pouic!')
 #'    })
 #'  }
 #'  
@@ -339,15 +339,15 @@ col_1 <- function(...){
 #' }
 make_action_button <- function(tag, inputId = NULL) {
   # some obvious checks
-  if (!inherits(tag, "shiny.tag")) stop("Must provide a shiny tag.")
+  if (!inherits(tag, 'shiny.tag')) stop('Must provide a shiny tag.')
   if (!is.null(tag$attribs$class)) {
-    if (grep("action-button", tag$attribs$class)) {
-      stop("tag is already an action button")
+    if (grep('action-button', tag$attribs$class)) {
+      stop('tag is already an action button')
     }
   }
   if (is.null(inputId) && is.null(tag$attribs$id)) {
-    stop("tag does not have any id. Please use inputId to be able to
-           access it on the server side.")
+    stop('tag does not have any id. Please use inputId to be able to
+           access it on the server side.')
   }
   
   # handle id
@@ -355,9 +355,9 @@ make_action_button <- function(tag, inputId = NULL) {
     if (!is.null(tag$attribs$id)) {
       warning(
         paste(
-          "tag already has an id. Please use input$", 
+          'tag already has an id. Please use input$',
           tag$attribs$id,
-          "to access it from the server side. inputId will be ignored."
+          'to access it from the server side. inputId will be ignored.'
         )
       )
     } else {
@@ -367,9 +367,9 @@ make_action_button <- function(tag, inputId = NULL) {
   
   # handle class
   if (is.null(tag$attribs$class)) {
-    tag$attribs$class <- "action-button"
+    tag$attribs$class <- 'action-button'
   } else {
-    tag$attribs$class <- paste(tag$attribs$class, "action-button") 
+    tag$attribs$class <- paste(tag$attribs$class, 'action-button')
   }
   # return tag
   tag
@@ -378,8 +378,8 @@ make_action_button <- function(tag, inputId = NULL) {
 
 # UNCOMMENT AND USE 
 # 
-# usethis::use_package("markdown")
-# usethis::use_package("rmarkdown")
+# usethis::use_package('markdown')
+# usethis::use_package('rmarkdown')
 #   
 # To use this part of the UI
 #   
@@ -408,7 +408,7 @@ make_action_button <- function(tag, inputId = NULL) {
 #'   
 #'   html <- markdown::markdownToHTML(md, fragment.only = TRUE)
 #'   
-#'   Encoding(html) <- "UTF-8"
+#'   Encoding(html) <- 'UTF-8'
 #'   
 #'   return(HTML(html))
 #' }
