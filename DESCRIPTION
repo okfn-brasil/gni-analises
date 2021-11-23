@@ -1,0 +1,21 @@
+Package: gnir
+Title: gniR: Relatório e App do Diário do Clima
+Version: 0.0.0.9000
+Authors@R: person('Andre', 'Assumpcao', email = 'andre.assumpcao@gmail.com', role = c('cre', 'aut'))
+Description: Este pacote criar o relatório e o app de visualização de resultados do Diário do Clima.
+License: MIT + file LICENSE
+Imports: 
+    config (>= 0.3.1),
+    golem (>= 0.3.1),
+    processx,
+    shiny (>= 1.7.1)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+URL: http://github.com/quaestiotech/gnir
+BugReports: http://github.com/quaestiotech/gnir/issues
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US

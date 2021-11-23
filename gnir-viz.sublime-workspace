@@ -1,0 +1,1556 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"str_to_",
+				"str_to_sentence"
+			],
+			[
+				"str_to",
+				"str_to_sentence"
+			],
+			[
+				"abs",
+				"abas_paf_org"
+			],
+			[
+				"dt_",
+				"dt_identificados"
+			],
+			[
+				"dt",
+				"dt_identificados"
+			],
+			[
+				"m",
+				"mutate_all"
+			],
+			[
+				"grou",
+				"group_by"
+			],
+			[
+				"resp",
+				"respondentes"
+			],
+			[
+				"NA_",
+				"NA_character_"
+			],
+			[
+				"ra",
+				"random_table"
+			],
+			[
+				"prop_",
+				"prop_vitorias"
+			],
+			[
+				"prop",
+				"prop_tributos"
+			],
+			[
+				"do",
+				"dollar_format"
+			],
+			[
+				"tible",
+				"tibble"
+			],
+			[
+				"blue",
+				"blue_abj"
+			],
+			[
+				"group",
+				"group_by"
+			],
+			[
+				"read",
+				"read_xlsx"
+			],
+			[
+				"fa",
+				"facet_wrap"
+			],
+			[
+				"trans",
+				"transmute"
+			],
+			[
+				"str",
+				"str_split"
+			],
+			[
+				"selecionar",
+				"selecionar_questao"
+			],
+			[
+				"survey",
+				"survey_data"
+			],
+			[
+				"quest",
+				"questao_grafico"
+			],
+			[
+				"selec",
+				"selecionar_respondente"
+			],
+			[
+				"plot",
+				"plotOutput"
+			],
+			[
+				"selecio",
+				"selecionar_questao"
+			],
+			[
+				"str_",
+				"str_squish"
+			],
+			[
+				"drop",
+				"drop_na"
+			],
+			[
+				"bs4",
+				"bs4Dash"
+			],
+			[
+				"random",
+				"random_text"
+			],
+			[
+				"render",
+				"renderUI"
+			],
+			[
+				"dash",
+				"dashboardPage"
+			],
+			[
+				"df",
+				"df_split"
+			],
+			[
+				"C",
+				"Connection"
+			],
+			[
+				"skip",
+				"SkipTest"
+			],
+			[
+				"assert",
+				"assertIsInstance"
+			],
+			[
+				"as",
+				"assertIsInstance"
+			],
+			[
+				"de",
+				"defaultdict"
+			],
+			[
+				"che",
+				"check_filepath"
+			],
+			[
+				"check",
+				"check_filepath"
+			],
+			[
+				"par",
+				"parsed_records_csv"
+			],
+			[
+				"TY",
+				"TYPE_COUNT_FROM_ACIS"
+			],
+			[
+				"count",
+				"count_records"
+			],
+			[
+				"off",
+				"offense_code"
+			],
+			[
+				"offe",
+				"offense_type"
+			],
+			[
+				"drug",
+				"drug_related"
+			],
+			[
+				"methos",
+				"method_results"
+			],
+			[
+				"syl",
+				"style"
+			],
+			[
+				"inclu",
+				"includeMarkdown"
+			],
+			[
+				"expect_eq",
+				"expect_equal"
+			],
+			[
+				"vi",
+				"visualize_bar"
+			],
+			[
+				"visua",
+				"visualize_line"
+			],
+			[
+				"instal",
+				"install.packages"
+			],
+			[
+				"pop",
+				"pop_collapsed"
+			],
+			[
+				"tra",
+				"transmute"
+			],
+			[
+				"read_",
+				"read_delim"
+			],
+			[
+				"downloa",
+				"download.file"
+			],
+			[
+				"REO",
+				"RECORD_TYPES"
+			],
+			[
+				"str_repla",
+				"str_replace"
+			],
+			[
+				"anal",
+				"analyze_race"
+			],
+			[
+				"NA",
+				"NA_character_"
+			],
+			[
+				"per",
+				"percentage"
+			],
+			[
+				"high",
+				"highcharter"
+			],
+			[
+				"acis",
+				"acisViz"
+			],
+			[
+				"process",
+				"process_severity"
+			],
+			[
+				"proces",
+				"process_severity"
+			],
+			[
+				"bar",
+				"bar_labels"
+			],
+			[
+				"proce",
+				"process_severity"
+			],
+			[
+				"h",
+				"highcharter"
+			],
+			[
+				"group_",
+				"group_by"
+			],
+			[
+				"replace",
+				"str_replace"
+			],
+			[
+				"stre",
+				"str_replace_all"
+			],
+			[
+				"install",
+				"install_github"
+			],
+			[
+				"coll",
+				"collapsed"
+			],
+			[
+				"shin",
+				"shinipsum"
+			],
+			[
+				"err",
+				"error_html"
+			],
+			[
+				"acs",
+				"acisViz"
+			],
+			[
+				"dt_co",
+				"dt_citations"
+			],
+			[
+				"repe",
+				"repetitions"
+			],
+			[
+				"vis",
+				"visualize_bar"
+			],
+			[
+				"eleme",
+				"element_text"
+			],
+			[
+				"bind",
+				"bind_rows"
+			],
+			[
+				"viol",
+				"violence_severity"
+			],
+			[
+				"violen",
+				"violent_offenses"
+			],
+			[
+				"goru",
+				"group_by"
+			],
+			[
+				"bs4dash",
+				"bs4dash_font"
+			],
+			[
+				"elem",
+				"element_text"
+			],
+			[
+				"line",
+				"line_colors"
+			],
+			[
+				"li",
+				"line_colors"
+			],
+			[
+				"ana",
+				"analyze_counts"
+			],
+			[
+				"co",
+				"county_code"
+			],
+			[
+				"gr",
+				"group_by"
+			],
+			[
+				"wrangl",
+				"wrangle_citations"
+			],
+			[
+				"offse",
+				"offense_severity"
+			],
+			[
+				"offense",
+				"offense_level"
+			],
+			[
+				"offense_",
+				"offense_severity"
+			],
+			[
+				"row",
+				"row_number"
+			],
+			[
+				"juris",
+				"jurisdiction"
+			],
+			[
+				"counti",
+				"counties_shapefiles"
+			],
+			[
+				"ex",
+				"expect_true"
+			],
+			[
+				"tid",
+				"tidy_incidents"
+			],
+			[
+				"coun",
+				"counties_shapefiles"
+			],
+			[
+				"tota",
+				"total_years"
+			],
+			[
+				"side",
+				"sidebarPanel"
+			],
+			[
+				"sidebar",
+				"sidebarLayout"
+			],
+			[
+				"output",
+				"outputId"
+			],
+			[
+				"fluid",
+				"fluidPage"
+			],
+			[
+				"gro",
+				"group_by"
+			],
+			[
+				"tab",
+				"tabPanel"
+			],
+			[
+				"collap",
+				"collapsible"
+			],
+			[
+				"prep",
+				"prepare_dt_incidents"
+			],
+			[
+				"rad",
+				"read_csv"
+			],
+			[
+				"cou",
+				"counties"
+			],
+			[
+				"go",
+				"group_by"
+			],
+			[
+				"offen",
+				"offense_severity"
+			],
+			[
+				"ele",
+				"element_blank"
+			],
+			[
+				"data",
+				"dataset_endpoint"
+			],
+			[
+				"selet",
+				"select"
+			],
+			[
+				"groupb",
+				"group_by"
+			],
+			[
+				"down",
+				"download.file"
+			],
+			[
+				"TabI",
+				"tabItem"
+			],
+			[
+				"bs4Tab",
+				"bs4TabItems"
+			],
+			[
+				"right",
+				"right_text"
+			],
+			[
+				"sider",
+				"sidebarUserPanel"
+			],
+			[
+				"bs4Dash",
+				"bs4DashPage"
+			],
+			[
+				"spe",
+				"spell_check_package"
+			],
+			[
+				"nre",
+				"new_vector"
+			],
+			[
+				"first",
+				"first_NA"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/MarkdownPreview/Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/PackageDev/Package/Convert to ....sublime-build",
+					""
+				],
+				[
+					"Packages/PackageDev/Package/Convert to ....sublime-build",
+					"JSON"
+				],
+				[
+					"Packages/PackageDev/Package/Convert to ....sublime-build",
+					"Property List"
+				],
+				[
+					"Packages/PackageDev/Package/Convert to ....sublime-build",
+					"YAML (Block Style)"
+				],
+				[
+					"Packages/PackageDev/Package/Convert to ....sublime-build",
+					"YAML (Default Style)"
+				],
+				[
+					"Packages/R-Box/support/R Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/User/pandoc.md2pdf.sublime-build",
+					""
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					""
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Install Package"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Install Package Locally"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Test Package"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Check Package"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Document Package"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Build Package Site"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Preview Package Site"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Build README"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Render R Markdown to HTML"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Render R Markdown to PDF"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Render R Markdown"
+				]
+			],
+			[
+				"Packages/R-Box/support/R Markdown.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/MarkdownPreview/Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/R-Box/support/R Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/User/pandoc.md2pdf.sublime-build",
+					""
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					""
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Install Package"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Install Package Locally"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Test Package"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Check Package"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Document Package"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Build Package Site"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Preview Package Site"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Build README"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Render R Markdown to HTML"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Render R Markdown to PDF"
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					"Render R Markdown"
+				]
+			],
+			[
+				"Packages/R-Box/support/R Markdown.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/bookdown.sublime-build",
+					""
+				],
+				[
+					"Packages/User/bookdown.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/bookdown.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"git sta",
+				"git: status"
+			],
+			[
+				"r ma",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"git fe",
+				"git: fetch"
+			],
+			[
+				"gite pull",
+				"git: pull with rebase"
+			],
+			[
+				"git fetch",
+				"git: fetch"
+			],
+			[
+				"git s",
+				"git: status"
+			],
+			[
+				"git fet",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"git pull",
+				"git: pull"
+			],
+			[
+				"git mer",
+				"git: merge"
+			],
+			[
+				"r mar",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"rmarkd",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"r markd",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"rename",
+				"Rename File"
+			],
+			[
+				"r mark",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"rmark",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"rm",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"git stat",
+				"git: status"
+			],
+			[
+				"dupli",
+				"File: Duplicate"
+			],
+			[
+				"renam",
+				"Rename File"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"git pus",
+				"git: push"
+			],
+			[
+				" git st",
+				"git: status"
+			],
+			[
+				"set syntax ram",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"gis stat",
+				"git: status"
+			],
+			[
+				"set r mark",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"set r",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"buid",
+				"Build With: bookdown"
+			],
+			[
+				"build boo",
+				"Build With: bookdown - Run"
+			],
+			[
+				"terminal",
+				"Terminal: Open in project folder"
+			],
+			[
+				"iterm",
+				"Snippet: random intercept model"
+			],
+			[
+				"build",
+				"Build: New Build System"
+			],
+			[
+				"rma",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"git pu",
+				"git: push"
+			],
+			[
+				"git st",
+				"git: status"
+			],
+			[
+				"send",
+				"SendCode: Choose Program"
+			],
+			[
+				"sen",
+				"SendCode: Choose Program"
+			],
+			[
+				"sendd",
+				"SendCode: Choose Program"
+			],
+			[
+				"fet",
+				"git: fetch"
+			],
+			[
+				"build ",
+				"Build With: bookdown"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"sor",
+				"Sort Lines"
+			],
+			[
+				"wrod",
+				"Word Wrap: Toggle"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"wotd",
+				"Word Wrap: Toggle"
+			],
+			[
+				"set rmak",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"fetch",
+				"git: fetch"
+			],
+			[
+				"ch",
+				"git: checkout"
+			],
+			[
+				"git check",
+				"git: checkout"
+			],
+			[
+				"check",
+				"git: checkout"
+			],
+			[
+				"swap",
+				"BracketHighlighter: Swap Brackets"
+			],
+			[
+				"new bran",
+				"git: checkout new branch"
+			],
+			[
+				"che",
+				"git: checkout"
+			],
+			[
+				"git pull from",
+				"git: pull from branch"
+			],
+			[
+				"git che",
+				"git: checkout"
+			],
+			[
+				"chec",
+				"git: checkout"
+			],
+			[
+				"branc",
+				"git: branch"
+			],
+			[
+				"brean",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"git",
+				"git: fetch"
+			],
+			[
+				"syntax r mar",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"git log",
+				"git: log"
+			],
+			[
+				"renma",
+				"Rename File"
+			],
+			[
+				"rena",
+				"Rename File"
+			],
+			[
+				"format",
+				"SQL Beautifier: Format Current SQL File"
+			],
+			[
+				"file move",
+				"File: Move"
+			],
+			[
+				"duplicat",
+				"File: Duplicate"
+			],
+			[
+				"ren",
+				"Rename File"
+			],
+			[
+				"brackets",
+				"BracketHighlighter: Swap Brackets"
+			],
+			[
+				"open",
+				"Terminal: Open in project folder"
+			],
+			[
+				"open term",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"au",
+				"Auto Wrap: Toggle"
+			],
+			[
+				"wr",
+				"Wrap at Ruler"
+			],
+			[
+				"open in b",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"syntax do",
+				"Set Syntax: Dockerfile"
+			],
+			[
+				"gitlab set",
+				"gitlab: set remote for integration"
+			],
+			[
+				"git remote remo",
+				"git: remote add"
+			],
+			[
+				"git remo",
+				"gitlab: set remote for integration"
+			],
+			[
+				"git remote",
+				"git: remote rename"
+			],
+			[
+				"push to r",
+				"git: push to branch name"
+			],
+			[
+				"push",
+				"git: push"
+			],
+			[
+				"git remote add",
+				"git: remote add"
+			],
+			[
+				"git set ",
+				"github: set remote for integration"
+			],
+			[
+				"git set u",
+				"github: set remote for integration"
+			],
+			[
+				"ter",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"git set remo",
+				"github: set remote for integration"
+			],
+			[
+				"git remote a",
+				"git: remote add"
+			],
+			[
+				"termi",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"termin",
+				"Terminal: Open in project folder"
+			],
+			[
+				"re",
+				"Rename File"
+			],
+			[
+				"remove",
+				"BracketHighlighter: Remove Brackets"
+			],
+			[
+				"ope",
+				"Terminal: Open in project folder"
+			],
+			[
+				"syntax doc",
+				"Set Syntax: Dockerfile"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"end",
+				"SFTP: Enable Debug Mode"
+			],
+			[
+				"up",
+				"SFTP: Upload File"
+			],
+			[
+				"sorte",
+				"Sort Lines"
+			],
+			[
+				"snippet fu",
+				"Snippet: Function"
+			],
+			[
+				"class",
+				"Snippet: New Class"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"r markdown",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"set syntax r ma",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"r-ide ",
+				"Preferences: R-IDE Settings"
+			],
+			[
+				"r-box",
+				"Preferences: R-Box Settings"
+			],
+			[
+				"browse ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package con",
+				"Package Control: Discover Packages"
+			],
+			[
+				"r markdown prefere",
+				"Preferences: MarkdownEditing Settings – User"
+			],
+			[
+				"wra",
+				"Auto Wrap: Toggle"
+			],
+			[
+				"auto",
+				"Auto Wrap: Toggle"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"r-bo",
+				"Preferences: R-Box Settings"
+			],
+			[
+				"R",
+				"Preferences: R-IDE Settings"
+			],
+			[
+				"markdown ex",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"rn",
+				"Rename File"
+			],
+			[
+				"syntax rm",
+				"Set Syntax: R Markdown"
+			],
+			[
+				"git remote ",
+				"git: remote add"
+			],
+			[
+				"git init",
+				"git: init"
+			],
+			[
+				"wrap",
+				"Wrap at Ruler"
+			],
+			[
+				"form",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"a",
+				"Auto Wrap: Toggle"
+			],
+			[
+				"GIT STA",
+				"git: status"
+			],
+			[
+				"git status",
+				"git: status"
+			],
+			[
+				"remove bra",
+				"BracketHighlighter: Remove Brackets"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 350.0,
+		"history":
+		[
+			"exit",
+			"os.getcwd()",
+			"os.getwd()",
+			"import os",
+			"pwd",
+			"os.getwd()"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2020 Querido Diário/gnir"
+	],
+	"file_history":
+	[
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/Gráficos e Tabelas.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/04-tecnico-II.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/Achados.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/R/utils-harmonizacao.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/mod_02_orgaos.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/Hipotese Consolidada 01.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/Achados.rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/Sistematização Hipótese 01.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/R/mod_processo.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/achados.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/05-tecnico-final.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/.gitignore",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/sistematização.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/.Rprofile",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/planilha_destinatários_questionário.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/Sistematização.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/R/utils-app.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/Sistematização Hipótese 01.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/tramitacao_judicial.csv",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/man/tempo_lab.Rd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/mod_05_metodologia.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/Perguntas ABJ.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/apendices/ap-3-1-dados-lai.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidScrapers/data-raw/processos-rfb.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/data-raw/app_texto.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/data-raw/survey_data.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/dev/run_dev.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/graficos_02_orgaos.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/apendices/ap-4-3-survey-dashboard.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/apendices/ap-1-1-estrutura-brasil.Rmd",
+		"/Users/andre/Library/Application Support/Sublime Text 3/Packages/User/bookdown.sublime-build",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/_output.yml",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/apendices/ap-3-2-dados-webscraping.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/hipotese-04.Rmd",
+		"/Users/andre/Library/Application Support/Sublime Text 3/Packages/User/R Markdown.sublime-settings",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/01-plano-de-trabalho.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/apendices/ap-1-2-iniciativas-brasil.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/bidTrib.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/assets/bib/book.bib",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/03-tecnico-I.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/_bookdown.yml",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/utils-css.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/pres/apresentacao.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/app_ui.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/graficos_04_transparencia.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/app_server.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/inst/metodologia.md",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/.gitignore",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/update-app.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/mod_03_experiencia.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/mod_01_amostra.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/data-raw/enviar_emails_questionarios.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/mod_04_transparencia.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/inst/book/bid_trib_abj.Rmd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/dev/04_scratch.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/man/app_texto.Rd",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/graficos_03_experiencia.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/data-raw/states.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/app_config.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisViz/R/visualize-misd.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/graficos_01_amostra.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/data-raw/glossary.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/graficos_colunas.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/fct_helpers.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/graficos_geral.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/graficos_pizza.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/graficos_restantes.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/R/mod_pgfn.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/R/app_server.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/R/app_config.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/R/mod_04_transparência.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/dev/02_dev.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidTrib/R/app_ui.R",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 BID Administração Tributária/bidSurvey/.Rbuildignore",
+		"/Users/andre/Dropbox (Personal)/Documents/Neuralmind/Enforce/data-raw/eventos.txt",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2020 CNJ Inova/AnalisePy/01-parse-movements.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/acispy/merge/merge.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/misc/SoG-main/Old Files/test_parse_ccis.sql",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/misc/SoG-main/Old Files/sog_prob_match_proto_update.sql",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/acis_processing.sh",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/acispy/extract/extract.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/04import_sql.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/untitled.sql",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/data/offnff_jul2021.txt",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/data/judgment_jul2021.txt",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/store/store.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/misc/SoG-main/acis_create_tables.sql",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/couting.log",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/02process_records.py",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2020 Querido Diário/toolbox/queridodiario_toolbox/gazette.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/parse_crstat_record_types.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/extraction.log",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/tests/test_acispy.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/acispy/helper/helper.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/acispy/acispy.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/acispy/helper/__init__.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/.Rhistory",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/processing.log",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/01extract_files.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/acispy/globals.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/misc/SoG-main/parse_crstat_record_types.py",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 STF Repercussão Geral/TesesComRepercussaoGeral.html",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisViz/R/app_ui.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/data/count_records_jul2021.csv",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 STF Repercussão Geral/RepercussaoGeral (2).html",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 STF Repercussão Geral/RepercussaoGeral (2).csv",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 STF Repercussão Geral/RepercussaoGeral.csv",
+		"/Users/andre/Dropbox (Personal)/Documents/Research/2021 STF Repercussão Geral/Teses de Repercussão Geral __ STF - Supremo Tribunal Federal.html",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/03process_records.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/data/count_records.csv",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/Makefile",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/ACIS Data Files for Ethan/SRW Uploads/Do files/1 Import AOC Codes.do",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/sample.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/data/counts",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/data/counts_jul2021.txt",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisr/tests/testthat/test-wrangle.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisr/R/tidy.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisr/data-raw/drug_offenses.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisr/R/transform.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisr/data-raw/violent_offenses.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisr/scratch/scratch.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/ACIS Data Files for Ethan/SRW Uploads/Do files/3 After 9jv is ran.do",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/data/errors.txt",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acispy/dev/scratch.py",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisr/tests/testthat/test-tidy.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisr/R/globals.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisr/R/data.R",
+		"/Users/andre/OneDrive - University of North Carolina at Chapel Hill/Criminal Justice Innovation Lab/projects/2021 ACIS/acisViz/R/data.R"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 240.0
+	},
+	"output.SFTP":
+	{
+		"height": 126.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 126.0
+	},
+	"output.exec":
+	{
+		"height": 305.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 126.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.show_commit_info":
+	{
+		"height": 108.0
+	},
+	"pinned_build_system": "Packages/User/bookdown.sublime-build",
+	"project": "gnir-viz.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tempo_lab",
+				"bidTrib/man/tempo_lab.Rd"
+			],
+			[
+				"",
+				"2021 ACIS/.Rhistory"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 305.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 648.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 347.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
