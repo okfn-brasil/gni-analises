@@ -46,15 +46,15 @@ Principais resultados atuais...
 Por lei, todo ato público, seja do Poder Executivo, seja do Legislativo ou do Judiciário, deve ser publicado em um diário oficial. Contudo, não existe padronização de diários oficiais no Brasil nem uma central de dados que permita que a sociedade civil acesse o conteúdo de diários de maneira fácil e rápida.  Para libertar os dados dos diários municipais, a Open Knowledge Brasil (OKBR) criou o projeto "Querido Diário", cujo objetivo é mapear, coletar e processar todos os diários municipais do país e disponibilizá-los em formato aberto para a sociedade civil. .
 
 Criação do Querido Diário;
-                Mapeamento dos diários
-                Raspagem e estruturação dos dados
-                Utilização e análise do produto
+                - Mapeamento dos diários
+                - Raspagem e estruturação dos dados
+                - Utilização e análise do produto
 
- Histórico (o que veio com a pandemia/Fundação Lemann/Lemann - Ensino remoto/Diário do Clima) + [Diferentes projetos](https://queridodiario.ok.org.br/sobre#historia): ...
+Parágrafo sobre os diferentes projetos:
+Histórico (o que veio com a pandemia/Fundação Lemann/Lemann - Ensino remoto/Diário do Clima) + [Diferentes projetos](https://queridodiario.ok.org.br/sobre#historia): ...
 Como funciona
 
 ### Diário do Clima
-
 Problema a ser resolvido - mapear;
  - Como surgiu + GNI;
 - Responsáveis pelo projeto - organizações parceiras;
@@ -63,14 +63,13 @@ Problema a ser resolvido - mapear;
       - Escopo/objetivo do diário do clima.
 
 ### Marcos regulatórios - Meio Ambiente
-
-- [Constituição Federal de 1988](https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao.htm) 
+no que diz respeito aos municípios na [Constituição Federal de 1988](https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao.htm):
   - Art. 24 Inciso 3° Inexistindo lei federal sobre normas gerais, os Estados  exercerão a competência legislativa plena, para atender a suas  peculiaridades
   - Art. 30. Compete aos Municípios: I - legislar sobre assuntos de interesse local; II – suplementar a legislação federal e a estadual  no que couber (...)
   - Arts. 34 e 35: Das intervençoes feitas pela União;
-  - [Lei de Crimes Ambientais (1998)][http://www.planalto.gov.br/ccivil_03/LEIS/L9605.htm]: Art. 73. Os valores arrecadados em pagamento de multas por infração ambiental serão revertidos ao Fundo Nacional do Meio Ambiente, criado pela [Lei nº 7.797, de 10 de julho de 1989](http://www.planalto.gov.br/ccivil_03/LEIS/L7797.htm), Fundo Naval, criado pelo [Decreto nº 20.923, de 8 de janeiro de 1932](https://legislacao.planalto.gov.br/legisla/legislacao.nsf/viwTodos/04737B762935FE7A032569FA0045A2E0?OpenDocument&HIGHLIGHT=1,), fundos estaduais ou municipais de meio ambiente, ou correlatos, conforme dispuser o órgão arrecadador.
+  
+Um dos principais marcos ambientais dentro da legislação brasileira foi A Política Nacional do Meio Ambiente ([Lei 6.938/81](https://www.planalto.gov.br/ccivil_03/LEIS/L6938.htm)) que visa o desenvolvimento sócio-econômico atendendo aos princípios de ação governamental, racionalização, planejamento, proteção, controle e zoneamento das atividades, proteção e educação (Art. 2°) .As diretrizes da Política Nacional do Meio Ambiente são formuladas em normas e planos, destinados a orientar a ação dos Governos da União, dos Estados, do Distrito Federal, dos Territórios e dos Municípios no que se relaciona com a preservação da qualidade ambiental e manutenção do equilíbrio ecológico, observados os princípios estabelecidos no art. 2º desta Lei (Art. 5°).
 
-* Política Nacional do Meio Ambiente ([Lei 6.938/81](https://www.planalto.gov.br/ccivil_03/LEIS/L6938.htm)): Visa desenvolvimento sócio-econômico atendendo aos princípios de ação governamental, racionalização, planejamento, proteção, controle e zoneamento das atividades, proteção e educação (Art. 2°) . Art 5º - As diretrizes da Política Nacional do Meio Ambiente serão formuladas em normas e planos, destinados a orientar a ação dos Governos da União, dos Estados, do Distrito Federal, dos Territórios e dos Municípios no que se relaciona com a preservação da qualidade ambiental e manutenção do equilíbrio ecológico, observados os princípios estabelecidos no art. 2º desta Lei.
 
   * SISNAMA
 
@@ -85,6 +84,31 @@ Problema a ser resolvido - mapear;
   * Fica alterado:
 
     Art. 3° da [Lei n° 10.165, de 27 de dezembro de 2000](https://www.planalto.gov.br/ccivil_03/LEIS/L10165.htm#art1): A Lei n° 6.938, de 1981, passa a vigorar acrescida dos seguintes artigos: ["Art. 17-Q](https://www.planalto.gov.br/ccivil_03/LEIS/L6938.htm#art17q). É o Ibama autorizado a celebrar convênios com os Estados, os Municípios e o Distrito Federal para desempenharem atividades de fiscalização ambiental, podendo repassar-lhes parcela da receita obtida com a TCFA." **Transferência de _recurso com pessoal_**
+    
+ #### Instrumentos da PNMA:
+
+  - Padrões de qualidade ambiental;
+  - Zoneamento ambiental;
+  - Avaliação de impactos ambientais;
+  - Licenciamento e revisão de atividades efetiva ou potencialmente poluidoras;
+  - Incentivos à produção e instalação de equipamentos e a criação ou absorção de tecnologia, voltados para a melhoria da qualidade ambiental;
+  - criação de espaços territoriais especialmente protegidos pelo Poder Público federal;
+  - Sistema nacional de informações sobre o meio ambiente;
+  - Cadastro Técnico Federal de Atividades e Instrumentos de Defesa Ambiental;
+  - penalidades disciplinares ou compensatórias ao não cumprimento das medidas necessárias à preservação ou correção da degradação ambiental;
+  - instituição do Relatório de Qualidade do Meio Ambiente, a ser divulgado anualmente pelo IBAMA;
+  - garantia da prestação de informações relativas ao Meio Ambiente, obrigando-se o Poder Público a produzí-las, quando inexistentes.
+
+  - Cadastro Técnico Federal de atividades potencialmente poluidoras e/ou utilizadoras dos recursos ambientais. 
+  - instrumentos econômicos, como concessão florestal, servidão ambiental, seguro ambiental e outros.
+
+
+Com a promulgação da Constituição Federal em 1988, o meio ambiente passou ser direito difuso e coletivo.
+  
+###### Meio Ambiente na Constituição Federal:
+  - Art. 225;
+  - [Lei de Crimes Ambientais (1998)][http://www.planalto.gov.br/ccivil_03/LEIS/L9605.htm]: Art. 73. Os valores arrecadados em pagamento de multas por infração ambiental serão revertidos ao Fundo Nacional do Meio Ambiente, criado pela [Lei nº 7.797, de 10 de julho de 1989](http://www.planalto.gov.br/ccivil_03/LEIS/L7797.htm), Fundo Naval, criado pelo [Decreto nº 20.923, de 8 de janeiro de 1932](https://legislacao.planalto.gov.br/legisla/legislacao.nsf/viwTodos/04737B762935FE7A032569FA0045A2E0?OpenDocument&HIGHLIGHT=1,), fundos estaduais ou municipais de meio ambiente, ou correlatos, conforme dispuser o órgão arrecadador.
+
 
     > obrigatoriedade de que todos os as propriedades e posses rurais do País façam parte do Sistema Nacional de Cadastro Ambiental Rural (Sicar)
 
@@ -100,7 +124,15 @@ Problema a ser resolvido - mapear;
   - Política Nacional de Educação Ambiental (1999):
   - Sistema Nacional de Unidades de Conservação (SNUC)(2000):
   - Lei de Gestão de Florestas Públicas (2006):
+  
+##### Planos e Programas do MMA
 
+- [Programa Floresta+][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/florestamais/ProgramaFloresta.pdf];
+- [Plano Nacional para Controle do Desmatamento Ilegal e Recuperação da Vegetação Nativa][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/controle-de-desmatamento-e-incendios-florestais/PlanoNacionalparaControledoDesmatamento20202023.pdf] existem diretrizes para os municípios, consequentemente no [Plano Operativo 2020 - 2023][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/controle-de-desmatamento-e-incendios-florestais/PlanoOperativo20202023.pdf] - Implementar programas e projetos de Pagamentos por Serviços Ambientais (PSA) existe responsabilidade das prefeituras municipais; 
+  - Nenhum dos municípios descritos [aqui][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/controle-de-desmatamento-e-incendios-florestais/pdf/Listagemmunicpiosprioritriosparaaesdepreveno2021.pdf] estão na amostra inicial.
+- [PLANAVEG Plano Nacional de Recuperação da Vegetação Nativa][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/ecossistemas-1/planaveg_plano_nacional_recuperacao_vegetacao_nativa.pdf] - Entidades municipais como Secretarias de Meio Ambiente e Conselhos Municipais de Meio Ambiente para atuar na integração entre estâncias, sensibilização da população, e capacitação, bem como recuperação de áreas.
+- [REDD++][http://redd.mma.gov.br/images/central-de-midia/pdf/publicacoes/notainformativa2018_captacaodescentralizacao.pdf];
+- [ARPA, A3P, Cerrado Sustentável, Zoneamento ecológico, dentre outros][https://antigo.mma.gov.br/programas-mma.html];
   
 
   _IBAMA_: Poder de polícia ambiental, responsável por recolher e repassar recursos da TCFA, ITR, CAR, APP, RL. objetivos institucionais relativos ao licenciamento ambiental, ao controle da qualidade ambiental, à autorização de uso dos recursos naturais e à fiscalização, monitoramento e controle ambiental e ações supletivas de competência da União, conforme legislação ambiental. Zoneamento e avaliação de impacto ambiental. CTF
@@ -124,31 +156,7 @@ Problema a ser resolvido - mapear;
   - Principal: ISO da  série 14000;
   - Outros: Certificação Orgânica; Comércio Justo;  EurepGap (Boas Práticas Agrícolas (GAP); Certificação Socioambiental e Produção Integrada
  
-  #### Instrumentos da PNMA:
-
-  - Padrões de qualidade ambiental;
-  - Zoneamento ambiental;
-  - Avaliação de impactos ambientais;
-  - Licenciamento e revisão de atividades efetiva ou potencialmente poluidoras;
-  - Incentivos à produção e instalação de equipamentos e a criação ou absorção de tecnologia, voltados para a melhoria da qualidade ambiental;
-  - criação de espaços territoriais especialmente protegidos pelo Poder Público federal;
-  - Sistema nacional de informações sobre o meio ambiente;
-  - Cadastro Técnico Federal de Atividades e Instrumentos de Defesa Ambiental;
-  - penalidades disciplinares ou compensatórias ao não cumprimento das medidas necessárias à preservação ou correção da degradação ambiental;
-  - instituição do Relatório de Qualidade do Meio Ambiente, a ser divulgado anualmente pelo IBAMA;
-  - garantia da prestação de informações relativas ao Meio Ambiente, obrigando-se o Poder Público a produzí-las, quando inexistentes.
-
-  - Cadastro Técnico Federal de atividades potencialmente poluidoras e/ou utilizadoras dos recursos ambientais. 
-  - instrumentos econômicos, como concessão florestal, servidão ambiental, seguro ambiental e outros.
-
-### Planos e Programas do MMA
-
-- [Programa Floresta+][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/florestamais/ProgramaFloresta.pdf];
-- [Plano Nacional para Controle do Desmatamento Ilegal e Recuperação da Vegetação Nativa][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/controle-de-desmatamento-e-incendios-florestais/PlanoNacionalparaControledoDesmatamento20202023.pdf] existem diretrizes para os municípios, consequentemente no [Plano Operativo 2020 - 2023][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/controle-de-desmatamento-e-incendios-florestais/PlanoOperativo20202023.pdf] - Implementar programas e projetos de Pagamentos por Serviços Ambientais (PSA) existe responsabilidade das prefeituras municipais; 
-  - Nenhum dos municípios descritos [aqui][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/controle-de-desmatamento-e-incendios-florestais/pdf/Listagemmunicpiosprioritriosparaaesdepreveno2021.pdf] estão na amostra inicial.
-- [PLANAVEG Plano Nacional de Recuperação da Vegetação Nativa][https://www.gov.br/mma/pt-br/assuntos/servicosambientais/ecossistemas-1/planaveg_plano_nacional_recuperacao_vegetacao_nativa.pdf] - Entidades municipais como Secretarias de Meio Ambiente e Conselhos Municipais de Meio Ambiente para atuar na integração entre estâncias, sensibilização da população, e capacitação, bem como recuperação de áreas.
-- [REDD++][http://redd.mma.gov.br/images/central-de-midia/pdf/publicacoes/notainformativa2018_captacaodescentralizacao.pdf];
-- [ARPA, A3P, Cerrado Sustentável, Zoneamento ecológico, dentre outros][https://antigo.mma.gov.br/programas-mma.html];
+ 
 
 ## Metodologia da Pesquisa
 
