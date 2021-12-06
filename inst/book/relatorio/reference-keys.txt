@@ -1,6 +1,7 @@
 intro
 queridodiario
 status
+diariodoclima
 politica-ambiental
 competências-da-união-ou-federais
 competências-estaduais
@@ -13,8 +14,8 @@ termos-de-interesse
 anotação-e-controle-de-qualidade
 resultados
 geral
-estudo-de-caso-01
-estudo-de-caso-02
-estudo-de-caso-03
+exemplo-01
+exemplo-02
+exemplo-03
 desenvolvimento-futuro
 conclusao
