@@ -1,3 +1,5 @@
 # Introdução {#intro}
 
-Esse é o capítulo de introdução do nosso relatório para o projeto Diário do Clima do Google News Initiative.
+Imagine se fosse possível acessar uma única página na internet que centralizasse todas as informações sobre política ambiental no Brasil. A pessoa usuária visitaria o *website*, faria buscas por políticas públicas, por atos normativos, por unidade federativa ou por ano e baixaria os resultados de sua busca de maneira organizada. De forma fácil e rápida, esta pessoa poderia fazer pesquisa científica ou aplicada, escrever artigos jornalísticos de interesse ambiental ou até monitorar a ação de administrações públicas em áreas sensíveis do Brasil.
+
+Esse site, infelizmente, não existe... mas não por muito tempo! (expandir...)

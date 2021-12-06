@@ -1,0 +1,23 @@
+# O que é o Querido Diário? {#queridodiario}
+
+O Diário Oficial da União (DOU) é um importante veículo de comunicação nacional, criado em 1° de outubro de 1862, sancionado pela Lei Imperial nº 1.177 (54 anos após a chegada da corte portuguesa ao Brasil). Sua função, desde então, é divulgar as leis e normas do país, de forma simples, direta e documental, sem qualquer tipo de contestação ou queixa; em outras palavras, este é o instrumento em que o governo presta contas à sociedade ([Lara, 20xx](link)). Atualmente  o DOU pode ser acessado através do [link da Imprensa Nacional](https://www.gov.br/imprensanacional/pt-br) permitindo buscas por palavras-chave ou buscas avançadas que permitem o filtro por seções, data, títulos ou conteúdo, entre outros. As seções básicas do DOU são:
+
+1. Leis, decretos, resoluções, instruções normativas, portarias e outros atos normativos de interesse geral;
+2. Atos de interesse dos servidores da Administração Pública Federal;
+3.  Extratos de instrumentos contratuais (acordos, ajustes, autorizações de compra, contratos, convênios, ordens de execução de serviço, termos aditivos e instrumentos congêneres) editais de citação, intimação, notificação e concursos públicos, comunicados, avisos de licitação entre outros atos da administração pública decorrentes de disposição legal.
+
+Por conter tantas informações relevantes, o DOU é utilizado como fonte para diferentes pesquisas; contudo, o foco destas pesquisas é o mesmo: recuperação de informações não-estruturadas. [Guerra et al. (2015)](https://www.scielo.br/j/rap/a/cXjcx6hgZ4r5XN3t6rd7SSJ/?lang=en), por exemplo, analisa a resposta das agências reguladoras no combate a COVID-19 através da busca de conteúdo no DOU e também das 11 agências reguladoras no país. Outros estudos contemplam a  análise regulatória de medicamentos no Brasil [(Feitoza-Silva et al., 2017)]( http://dx.doi.org/10.11606/issn.2316-9044.v18i2p122-156) e a inferência sobre risco de fraude nos contratos públicos  [(Lima et al., 2020)](https://aclanthology.org/2020.findings-emnlp.143.pdf)
+
+Embora o DOU receba a maior parte da atenção da pesquisa de atos administrativos no Brasil, a exigência de publicidade de informações não se limita ao Poder Executivo Federal. Outras entes federados (Estados e Municípios) e poderes (Judiciário e Legislativo) também possuem meios próprios de publicação de atos públicos. Estes diários, contudo, não são diretamente acessíveis. Os Diários Oficiais Municipais, em particular, são aqueles com maior dificuldade de acesso em função da sua quantidade e diversidade. São 5.570 municípios brasileiros com diferentes fontes de publicação, formatos de arquivos, disponibilidade temporal e muitas outras barreiras de acesso à informação.
+
+**É justamente este problema que a Open Knowledge Brasil busca resolver com o projeto _Querido Diário_**: buscamos mapear, coletar e processar todos os diários municipais do país e disponibilizá-los em formato aberto para a sociedade civil. Para realizar essas três tarefas, a Open Knowledge Brasil conta com uma equipe de pessoas cientistas e engenheiras de dados e uma grande comunidade de pessoas colaboradoras voluntárias.
+
+## Status
+
+(ATUALIZAR DADOS)
+
+Atualmente, quase todos os diários dos 5.570 municípios brasileiros já foram mapeados pela nossa comunidade. Isto significa que sabemos onde esses diários são publicados, qual sua cobertura temporal e qual o tipo de arquivo em que estes diários são publicados.
+
+Destes municípios, nós também já temos raspadores de diários para mais de 2.300 municípios, cerca de 41% do total. Disponibilizamos esses dados via API aberta ao público, disponível aqui. Por necessidade de verificação dos dados coletados, estão disponíveis na API apenas diários de 13 capitais brasileiras.
+
+Com relação ao processamento do texto dos diários, nós já somos capazes de converter qualquer formato de diário (PDF, Docx, RTF, HTML, JPEG, etc.) em .txt e fazer a extração e validação de CPFs e CNPJs dos diários oficiais. Contudo, ainda há muito o que fazer em termos de extração de informação não-estruturada e sua subsequente estruturação.
