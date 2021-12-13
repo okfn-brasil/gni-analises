@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.13)  12 DEC 2021 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.13)  13 DEC 2021 16:14
 entering extended mode
 **./relatorio.tex
 (relatorio.tex
@@ -531,41 +531,85 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 {C:/Users/fance/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-85.
+94.
 (C:\Users\fance\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [3] [4]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 457.
+(Font)              <10> on input line 487.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 457.
+(Font)              <7> on input line 487.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 457.
+(Font)              <5> on input line 487.
 [5] [6]
-
-LaTeX Warning: Command \~ invalid in math mode on input line 686.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 686.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 686.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 686.
+Overfull \hbox (1435.98944pt too wide) in paragraph at lines 686--686
+[]  \T1/lmtt/m/n/10 Retorna documentos com base na ordem e proximidade dos term
+os correspondentes. A consulta de intervalos usa regras de correspondência, con
+struídas a partir de um pequeno conjunto de definições. Essas regras são então 
+aplicadas aos termos de um campo especificado. As definições produzem sequência
+s de intervalos mínimos que abrangem termos em um corpo de texto.[] 
+ []
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 686.
+Overfull \hbox (2060.73763pt too wide) in paragraph at lines 693--693
+[]  \T1/lmtt/m/n/10 Aqui é utilizada uma sintaxe para analisar e dividir o conj
+unto de caracteres de consulta fornecida com base em operadores booleanos como 
+AND, NOT e OR. Cada texto é analisado independente e após isso são retornados o
+s documentos. Também é possível utilizar a consulta query_string para criar uma
+ pesquisa complexa que inclui caracteres versáteis, pesquisas em vários campos 
+e muito mais. A desvantagem desse método é que se a sintaxe for inválida um err
+o será retornado na busca.[] 
+ []
 
-[7] (relatorio.aux) ) 
+
+Overfull \hbox (784.99133pt too wide) in paragraph at lines 704--704
+[]  \T1/lmtt/m/n/10 Uma consulta que corresponde a documentos correspondentes a
+ combinações booleanas de outras consultas. A consulta é construída usando uma 
+ou mais cláusulas booleanas, cada cláusula com uma ocorrência digitada. Os tipo
+s de ocorrência são:[] 
+ []
+
+
+Overfull \hbox (847.99115pt too wide) in paragraph at lines 711--711
+[]  \T1/lmtt/m/n/10 Retorna documentos que correspondem a uma consulta positiva
+ enquanto reduz a pontuação de relevância dos documentos que correspondem a uma
+ consulta negativa. Essa consulta permite rebaixar certos documentos sem excluí
+-los dos resultados da pesquisa.[] 
+ []
+
+
+Overfull \hbox (837.49118pt too wide) in paragraph at lines 717--717
+[] \T1/lmtt/m/n/10 Retorna documentos que contêm termos semelhantes ao termo de
+ pesquisa medido por uma distância de edição. Uma distância de edição é o númer
+o de alterações de um caractere necessárias para transformar um termo em outro.
+ Essas mudanças podem incluir:[] 
+ []
+
+[7]
+
+LaTeX Warning: Command \~ invalid in math mode on input line 777.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 777.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 777.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 777.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 777.
+
+[8] (relatorio.aux) ) 
 Here is how much of TeX's memory you used:
- 12884 strings out of 478864
- 195656 string characters out of 2848660
- 561522 words of memory out of 3000000
- 30409 multiletter control sequences out of 15000+600000
- 470336 words of font info for 145 fonts, out of 8000000 for 9000
+ 12886 strings out of 478864
+ 195655 string characters out of 2848660
+ 554510 words of memory out of 3000000
+ 30410 multiletter control sequences out of 15000+600000
+ 470271 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,80p,1008b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,6n,80p,1008b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/fance/AppData/Local/Programs/MiKTeX/fonts/enc/dv
 ips/lm/lm-rm.enc}{C:/Users/fance/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
 lm/lm-mathit.enc}{C:/Users/fance/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
@@ -580,9 +624,9 @@ mr12.pfb><C:/Users/fance/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 r17.pfb><C:/Users/fance/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr
 i10.pfb><C:/Users/fance/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmt
 t10.pfb>
-Output written on relatorio.pdf (7 pages, 257643 bytes).
+Output written on relatorio.pdf (8 pages, 266407 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
  36921 words of extra memory for PDF output out of 42996 (max. 10000000)
 
