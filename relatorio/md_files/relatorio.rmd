@@ -3,8 +3,8 @@ title: "relatorio"
 author: "Luísa"
 date: "05/12/2021"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 # Relatório Final Diário do Clima
 
@@ -24,7 +24,7 @@ Proposta de relatório final do projeto Diário do Clima.
 
 ## Introdução
  
-O Diário Oficial da União (DOU) é um importante veículo de comunicação nacional, criado em 1° de outubro de 1862,  sancionado pela Lei Imperial nº 1.177, após 54 anos da chegada da corte portuguesa ao Brasil. Sua função, desde então, é divulgar as leis e normas do país, de forma simples, direta e documental, sem qualquer tipo de contestação ou queixa, sendo este o instrumento em que o governo presta contas à sociedade ([Lara, 20xx](link)). Atualmente  o DOU pode ser acessado através do [link da Imprensa Nacional](https://www.gov.br/imprensanacional/pt-br) permitindo buscas por palavras-chave ou até mesmo uma busca avançada que permite o filtro por seções, data, busca por títulos ou conteúdo, entre outros. As seções básicas do DOU consistem em:
+O Diário Oficial da União (DOU) é um importante veículo de comunicação nacional, criado em 1° de outubro de 1862,  sancionado pela Lei Imperial nº 1.177, após 54 anos da chegada da corte portuguesa ao Brasil. Sua função, desde então, é divulgar as leis e normas do país, de forma simples, direta e documental, sem qualquer tipo de contestação ou queixa, sendo este o instrumento em que o governo presta contas à sociedade ([Rocha, 2020](link)). Atualmente  o DOU pode ser acessado através do [link da Imprensa Nacional](https://www.gov.br/imprensanacional/pt-br) permitindo buscas por palavras-chave ou até mesmo uma busca avançada que permite o filtro por seções, data, busca por títulos ou conteúdo, entre outros. As seções básicas do DOU consistem em:
 
 1. Leis, decretos, resoluções, instruções normativas, portarias e outros atos normativos de interesse geral;
 2. Atos de interesse dos servidores da Administração Pública Federal;
@@ -36,39 +36,60 @@ No entanto, poucos estudos mencionam Diários Oficiais Municipais. [Xavier et al
 
 No cenário da administração pública municipal, o setor do Diário Oficial Municipal tem a atribuição de indexar e publicar todo o conteúdo gerado pelo Poder Executivo através dos Atos Normativos contidos em uma edição do Diário Oficial. Trata-se de uma tarefa nada trivial que consome tempo e recursos do setor, e quase sempre é auxiliada por ferramentas computacionais não específicas, o que compromete ainda mais a eficiência do processo. Extrair informações dos diários oficiais municipais pode ser muito útil para avaliação de políticas públicas, jornalismo, ou até mesmo como auditoria do governo.
  
-Neste sentido, o projeto Querido Diário já mapeou quase todos os diários oficiais dos 5.570 municípios brasileiros, obtendo raspadores para mais de 2.300 municípios, cerca de 41% do total. A  Open Knowledge Brasil junto com uma equipe de pessoas cientistas e engenheiras de dados e uma grande comunidade de colaboradores voluntários que trabalha no Querido diário alcançaram também com que qualquer formato de diário (PDF, Docx, RTF, HTML, JPEG, etc.) em .txt e fazer a extração e validação de CPFs e CNPJs dos diários oficiais. De modo a ampliar o projeto surge o Diário do Clima que foi um dos vencedores do edital da [Google News Initiative (GNI)](https://newsinitiative.withgoogle.com/). A GNI visa promover um jornalismo duradouro e diverso, no combate a desinformação e em prol da transparência de dados.
+Neste sentido, o projeto Querido Diário já mapeou quase todos os diários oficiais dos 5.570 municípios brasileiros, obtendo raspadores para mais de 2.300 municípios, cerca de 41% do total. A  Open Knowledge Brasil junto com uma equipe de pessoas cientistas e engenheiras de dados e uma grande comunidade de colaboradores voluntários que trabalha no Querido diário alcançaram também com que qualquer formato de diário (PDF, Docx, RTF, HTML, JPEG, etc.) em .txt e fazer a extração e validação de CPFs e CNPJs dos diários oficiais. De modo a ampliar o projeto surge o Diário do Clima que foi um dos vencedores do edital da [Google News Initiative (GNI)](https://newsinitiative.withgoogle.com/). A GNI visa promover um jornalismo duradouro e diverso, no combate a desinformação em prol da transparência de dados.
 
 O projeto Diário do Clima tem como objetivo gerar uma plataforma de consulta sobre iniciativas e políticas de combate à mudanças climáticas nos 5.570 municípios brasileiros no qual culminará em uma importante fonte para jornalistas. Para isso será necessário segmentar informações sobre políticas e iniciativas de combate à mudanças climáticas nos diários oficiais dos municípios brasileiros através de mecanismos de inteligência artificial. 
 
 Principais resultados atuais...
 
 ### Explorando o Querido Diário
-Por lei, todo ato público, seja do Poder Executivo, seja do Legislativo ou do Judiciário, deve ser publicado em um diário oficial. Contudo, não existe padronização de diários oficiais no Brasil nem uma central de dados que permita que a sociedade civil acesse o conteúdo de diários de maneira fácil e rápida.  Para libertar os dados dos diários municipais, a Open Knowledge Brasil (OKBR) criou o projeto "Querido Diário", cujo objetivo é mapear, coletar e processar todos os diários municipais do país e disponibilizá-los em formato aberto para a sociedade civil. .
 
-Criação do Querido Diário;
+Por lei, todo ato público, seja do Poder Executivo, seja do Legislativo ou do Judiciário, deve ser publicado em um diário oficial. Contudo, não existe padronização de diários oficiais no Brasil nem uma central de dados que permita que a sociedade civil acesse o conteúdo de diários de maneira fácil e rápida.  Para libertar os dados dos diários municipais, a Open Knowledge Brasil (OKBR) criou o projeto "Querido Diário", cujo objetivo é mapear, coletar e processar todos os diários municipais do país e disponibilizá-los em formato aberto para a sociedade civil.
+
+Para mapear diários oficiais municipais e extrair informações relevantes foi necessário compreenedr qual é a dimensão e escopo de um diário oficial municipal. Segundo o [Diário Oficial do município de São Paulo](http://www.docidadesp.imprensaoficial.com.br/Busca.aspx) o jornal é dividido em oito seções: Gabinete do Prefeito, Secretarias, Servidores, Concursos, Editais, Licitações, Câmara Municipal e Tribunal de Conta
+Um diário municipal está, teoricamente, categorizado logicamente em algumas seções. Essas seções correspondem a exigências legais de publicação de atos públicos. Contudo, como os municípios não seguem padrão uniforme de divulgação de informações, essas seções podem não ter títulos comuns ou mesma estrutura e nem são publicadas em todos os diários – afinal, nem sempre todos os atos públicos cuja publicação é exigida por lei ocorrem todos os dias. De modo geral, as seções obrigatórias são:
+
+- Atos Normativos: Obrigações ou direitos aos cidadãos fruto de atividade do poder executivo (ou legislativo) municipal. 
+- Atos de Pessoal: Mudanças nas atividades dos funcionários municipais, contemplando ingresso em carreira pública, exoneração, concessão de afastamento temporário, etc.
+- Contas Públicas: Obrigações de dívida dos municípios e peça orçamentária em respeito à LRF.
+- Audiências Públicas: Informes para a população sobre audiências públicas referentes à atividade do governo municipal e implementação de políticas públicas locais.
+- Licitações: Informes sobre os principais instrumentos de contratação de bens e serviços privados no Brasil pelo setor público.
+- Processos Disciplinares: Informes de processos investigativos e disciplinares sobre conduta de servidores públicos ou contratantes do poder executivo municipal.
+- Processos Tributários: Informes de acórdãos entre o fisco municipal e os contribuintes em processos administrativos tributários que afetam a arrecadação do município.
+- Conselhos Municipais: Informes sobre a fiscalização de políticas públicas por parte da sociedade civil.
+
+Como o interesse da sociedade civil por conteúdo de diários oficiais normalmente é focado em um tema, a segmentação do diário surge como nossa primeira prioridade de ciência de dados, uma vez que nos permitiria "fatiar" o conteúdo e permitir buscas apenas em seções desejadas. Portanto, uma tarefa fundamental para a equipe da OKBR seria uma forma automatizada de segmentação do diário nestas categorias.
+
+Parágrafo sobre os diferentes projetos:
+Histórico (o que veio com a pandemia/Fundação Lemann/Lemann - Ensino remoto/Diário do Clima)
+O projeto Querido Diário não surgiu do nada, ele veio inspirado pela [Operação Serenata de Amor](https://serenata.ai/) que criou a Rosie, uma robô que através de inteligência artficial consegue rastrear irregularidades nos gastos do Congresso Nacional. E também do [Open Data Index](https://ok.org.br/projetos/open-data-index/) A OKBR já tinha uma ideia de acessibilizar os diários oficiais e com tantas outras conquistas foi possível aproveitar o conhecimento acumulado para criar o projeto Querido Diário. Atualmente, a equipe da OKBR também atua em outros projetos e desde o início da pandemia da COVID-19 foram realizados projetos voltados para solucionar problemas relacionados a transparênca de dados.. O projeto ´[Sorria #Estamos Vigiando](https://ok.org.br/projetos/sorria-estamosvigiando/), [Monitor da INDA](https://ok.org.br/inda/), [Transparência COVID-19](https://transparenciacovid19.ok.org.br/).
+
+Com uma equipe qualificada experiência e capacidade o Querido Diário compila os diários oficiais de todos os municípios brasileiros através de inteligência artifical. O projeto possui código aberto, ou seja, qualquer pessoa pode contribuir no projeto ou entender como a programação é arquitetad. De maneira simplificada os diários oficias são coletados dos seus respectivos endereços eletrônicos e submetidos a raspadores (_spiders_) em que filtram o resultado para extrair informações como o formato do arquivo, tamanho e ser convertido em um documento acessível de PDF, concomitantemente são extraídas outras informações do arquivo como data, seção do diário que são armazenadas em uma base de metadados. ...  Onde fica o arquivo bruto são extraídos o texto em formato TXT em formato aberto. Onde estão os metadados é realizado uma busca textual com o mecanismo de busca de análise de dados ElasticSearch, onde é possível indexar as informações dos diários e armazená-las centralmente facilitando futuras buscas. Após isso, uma interação entre os indexadores do ElasticSearch e o texto puro é realizada passando estes dados para a Interface de Programação de Aplicações (API) (usado pela máquina) que é integrada a uma [platadorma de visualização](https://queridodiario.ok.org.br/) para o usuário.
+
+
                 - Mapeamento dos diários
                 - Raspagem e estruturação dos dados
                 - Utilização e análise do produto
 
-Parágrafo sobre os diferentes projetos:
-Histórico (o que veio com a pandemia/Fundação Lemann/Lemann - Ensino remoto/Diário do Clima) + [Diferentes projetos](https://queridodiario.ok.org.br/sobre#historia): ...
-Como funciona
-
 ### Diário do Clima
+
+A partir do prêmio da Inovação promovido pela _Google News Initiative_ foi possível o início do Projeto Diário do Clima que visa monitorar os atos de autorização e normativos publicados diariamente nos diários oficiais em todos os municípios brasileiro. A partir dos passos avançados pelo Querido Diário é possível aplicar algumas das técnicas previamente utilizadas na plataforma Diário do Clima. Para o projeto ser possível é necessário raspar e processar os documentos, com a utilização de mecanismos de inteligência artificial para categorizar cada ato e organizá-los por entidades relevantes permitindo a filtragem e priorização da informação. O Diário do Clima será uma plataforma que ajudará principalmente jornalistas e comunicadores no acompanhamento de atos relacionados com o clima publicados por municípios brasileiros.  
+
+Para executar esse projeto mais sete organizações estão unidas: [((o))Eco](https://oeco.org.br/), [Eco Nordeste](https://agenciaeconordeste.com.br/), [Agência Envolverde](https://envolverde.com.br/), [InfoAmazonia](https://infoamazonia.org/), [ClimaInfo](https://climainfo.org.br/), [#Colabora](https://projetocolabora.com.br/) e [Política por Inteiro](https://www.politicaporinteiro.org/).
+
 Problema a ser resolvido - mapear;
  - Como surgiu + GNI;
-- Responsáveis pelo projeto - organizações parceiras;
   -  Principais diferenças do Querido Diário;
       - Quais informações serão coletadas?
       - Escopo/objetivo do diário do clima.
 
 ### Marcos regulatórios - Meio Ambiente
-no que diz respeito aos municípios na [Constituição Federal de 1988](https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao.htm):
+No que diz respeito aos municípios na [Constituição Federal de 1988](https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao.htm):
   - Art. 24 Inciso 3° Inexistindo lei federal sobre normas gerais, os Estados  exercerão a competência legislativa plena, para atender a suas  peculiaridades
   - Art. 30. Compete aos Municípios: I - legislar sobre assuntos de interesse local; II – suplementar a legislação federal e a estadual  no que couber (...)
   - Arts. 34 e 35: Das intervençoes feitas pela União;
   
-Um dos principais marcos ambientais dentro da legislação brasileira foi A Política Nacional do Meio Ambiente ([Lei 6.938/81](https://www.planalto.gov.br/ccivil_03/LEIS/L6938.htm)) que visa o desenvolvimento sócio-econômico atendendo aos princípios de ação governamental, racionalização, planejamento, proteção, controle e zoneamento das atividades, proteção e educação (Art. 2°) .As diretrizes da Política Nacional do Meio Ambiente são formuladas em normas e planos, destinados a orientar a ação dos Governos da União, dos Estados, do Distrito Federal, dos Territórios e dos Municípios no que se relaciona com a preservação da qualidade ambiental e manutenção do equilíbrio ecológico, observados os princípios estabelecidos no art. 2º desta Lei (Art. 5°).
+Um dos principais marcos ambientais dentro da legislação brasileira foi A Política Nacional do Meio Ambiente ([Lei 6.938/81](https://www.planalto.gov.br/ccivil_03/LEIS/L6938.htm)) que visa o desenvolvimento sócio-econômico atendendo aos princípios de ação governamental, racionalização, planejamento, proteção, controle e zoneamento das atividades, proteção e educação (Art. 2°). As diretrizes da Política Nacional do Meio Ambiente são formuladas em normas e planos, destinados a orientar a ação dos Governos da União, dos Estados, do Distrito Federal, dos Territórios e dos Municípios no que se relaciona com a preservação da qualidade ambiental e manutenção do equilíbrio ecológico, observados os princípios estabelecidos no art. 2º desta Lei (Art. 5°).
 
 
   * SISNAMA
@@ -156,20 +177,44 @@ Com a promulgação da Constituição Federal em 1988, o meio ambiente passou se
   - Principal: ISO da  série 14000;
   - Outros: Certificação Orgânica; Comércio Justo;  EurepGap (Boas Práticas Agrícolas (GAP); Certificação Socioambiental e Produção Integrada
  
+
+## Metodologia 
+A metodologia de trabalho foi sub-dividida em 5 etapas, sendo: Pré-processamento, mecanismos de busca, stopwords e stoplist, refinamento e avaliação de precisão.
+
+>> **1** Pré-processamento
+
+Processo realizado previamente pelo Querido Diário, consiste em mapear os Diários Oficiais Municipais, obter raspadores para cada um destes e ser capaz de converter os documentos para PDF.
+
+>> **2** Mecanismos de Busca
+
+A recuperação de informações (RI) pode ser feita através de um sistema que funciona a partir de diferente mecanismos, sejam análise textual, filtragem de informação por meio da extração de stopwords, técnicas de redução de palavras a seus radicais (stemming), técnicas de indexação, arquivo invertido, modelos matemáticos e estatísticos para a representação de documentos, de consultas e a definição de coeficientes de similaridades, estruturas de categorização e de expansão de consultas por meio da utilização de Thesaurus (Aires, 2005). Para este projeto foram utilizados seis tipos de busca, a saber:
+  *_Intervalar_*
+      Este tipo de busca consiste em buscar palavras ou conjunto de palavras que estejam a uma determinada distância em um texto específico. Por exemplo, caso a expressão "Fundo" esteja separada da palavra "Clima" em até 5 palavras, como é o caso de "Fundo Municipal do Clima".
+   
+  *_Querystring_*
  
+  *_Booleana_*
+      Este mecanismo auxilia na busca de padrões por diferentes grafias e padrões.
+ 
+  *_Boosting_*
+  
+  *_Fuzzy_*
+  
+  *_Expressões regulares_*
 
-## Metodologia da Pesquisa
+>> **3** Stopwords e Stoplists
 
-A recuperação de informações (RI) pode ser feita através de um sistema que funciona a partir de diferente mecanismos, sejam análise textual, filtragem de informação por meio da extração de stopwords, técnicas de redução de palavras a seus radicais (stemming), técnicas de indexação, arquivo invertido, modelos matemáticos e estatísticos para a representação de documentos, de consultas e a definição de coeficientes de similaridades, estruturas de categorização e de expansão de consultas por meio da utilização de Thesaurus (Aires, 2005).
+...
 
-Etapas: Pré-processamento, tokenização (curadoria), stopwords e stoplists, normalização, pós-processamento: avaliação de precisão 
+>> **4** Refinamento
+...
+
+>> **5** Avaliação de precisão
+Seguindo a equação 1
 
 $$
 Precisão = n° de documentos relevantes/n° de documentos recuperados
-$$
+$$        
 
-
-...
-...
-
+##### Cronograma do projeto
 
