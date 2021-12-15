@@ -1,5 +1,72 @@
 # Metodologia {#metodologia}
 
+Muito do que 
+A metodologia de trabalho foi sub-dividida em cinco etapas, sendo: Pré-processamento, mecanismos de busca, stopwords e stoplist, refinamento e avaliação de precisão.
+
+>> **1** Pré-processamento
+
+Processo realizado previamente pelo Querido Diário, consiste em mapear os Diários Oficiais Municipais, obter raspadores para cada um destes e ser capaz de converter os documentos em texto puro e metadados, armazenando através do ElasticSearch.
+
+>> **2** Mecanismos de Busca
+
+A recuperação de informações (RI) pode ser feita através de um sistema que funciona a partir de diferente mecanismos, sejam análise textual, filtragem de informação por meio da extração de stopwords, técnicas de redução de palavras a seus radicais (stemming), técnicas de indexação, arquivo invertido, modelos matemáticos e estatísticos para a representação de documentos, de consultas e a definição de coeficientes de similaridades, estruturas de categorização e de expansão de consultas por meio da utilização de Thesaurus (Aires, 2005). Para este projeto foram utilizados seis tipos de busca, a saber:
+
+  *_Intervalar_*
+  
+      Retorna documentos com base na ordem e proximidade dos termos correspondentes. A consulta de intervalos usa regras de correspondência, construídas a partir de um pequeno conjunto de definições. Essas regras são então aplicadas aos termos de um campo especificado. As definições produzem sequências de intervalos mínimos que abrangem termos em um corpo de texto. 
+    *Exemplo*:
+   
+  *_Querystring_*
+  
+      Aqui é utilizada uma sintaxe para analisar e dividir o conjunto de caracteres de consulta fornecida com base em operadores booleanos como AND, NOT e OR. Cada texto é analisado independente e após isso são retornados os documentos. Também é possível utilizar a consulta query_string para criar uma pesquisa complexa que inclui caracteres versáteis, pesquisas em vários campos e muito mais. A desvantagem desse método é que se a sintaxe for inválida um erro será retornado na busca.
+    *Exemplo*:
+    
+  *_Booleana_*
+  
+  
+      Uma consulta que corresponde a documentos correspondentes a combinações booleanas de outras consultas. A consulta é construída usando uma ou mais cláusulas booleanas, cada cláusula com uma ocorrência digitada. Os tipos de ocorrência são:
+      - must: O termo deve, obrigatoriamente, aparecer no documento.
+      - filter: O termos deve aparecer nos documentos correspondentes.
+      - should: O termo deve aparecer no documento.
+      - must_not: O termo não deve, obrigatoriamente, aparecer no documento.
+      
+ 
+  *_Boosting_*
+  
+      Retorna documentos que correspondem a uma consulta positiva enquanto reduz a pontuação de relevância dos documentos que correspondem a uma consulta negativa. Essa consulta permite rebaixar certos documentos sem excluí-los dos resultados da pesquisa.
+      
+  *_Fuzzy_*
+  
+     Retorna documentos que contêm termos semelhantes ao termo de pesquisa medido por uma distância de edição. Uma distância de edição é o número de alterações de um caractere necessárias para transformar um termo em outro. Essas mudanças podem incluir:
+
+- Mudando um personagem (box ??? fox)
+- Removendo um caractere (black ??? lack)
+- Inserindo um personagem (sic ??? sick)
+- Transpondo dois caracteres adjacentes (act ??? cat)
+     
+   Para encontrar termos semelhantes, a consulta do tipo fuzzy cria um conjunto de todas as variações ou expansões possíveis do termo de pesquisa dentro de uma distância de edição especificada. A consulta retorna correspondências exatas para cada expansão.
+  
+  *_Expressões regulares_*
+  
+  
+    Retorna documentos que contêm termos que correspondem a uma expressão regular. Uma expressão regular é uma maneira de combinar padrões em dados usando caracteres de espaço reservado, chamados de operadores. Para obter uma lista de operadores suportados pela consulta regexp.
+
+>> **3** Stopwords e Stoplists
+   
+   O processo de criação das palavras de busca é acompanhado de um longo trabalho envolvendo uma curadoria de jornalistas especializados. Foram selecionados voluntariamente 7 jornalistas para compor a equipe de curadoria e avaliar os documentos coletados através dos mecanismos de busca e avaliar qualitativamente os resultados. No final da 1° etapa é previsto que cada um dos curadores avaliem cerca de 768 termos de busca.
+   
+>> **4** Refinamento
+
+   Após a coleta dos documentos e definição dos termos de busca será feita uma nova rodada de coleta de documentos para refinar os processos de busca. Essa etapa é necessária para deixar a plataforma mais eficaz e amigável, bem como melhorar o processamento dos documentos. 
+
+>> **5** Avaliação de precisão
+
+  Análise de dados..
+  - Índices positivos e negativos;
+  - Relação Qualidade do documento do ElasticSearch X Curadoria;
+  - Qualidade dos highlights.
+Seguindo a equação 1
+
 ## Um DiÃ¡rio Municipal
 
 ## Mecanismos de Busca

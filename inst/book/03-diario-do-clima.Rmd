@@ -1,3 +1,11 @@
 # O que Ã© o DiÃ¡rio do Clima? {#diariodoclima}
 
--
+A partir do prêmio da Inovação promovido pela _Google News Initiative_ foi possível o início do Projeto Diário do Clima que visa monitorar os atos de autorização e normativos relacionados a meio ambiente e clima publicados diariamente nos diários oficiais em todos os municípios brasileiros. A partir dos passos avançados pelo Querido Diário é possível aplicar algumas das técnicas previamente utilizadas na plataforma Diário do Clima. Para o projeto ser possível é necessário raspar e processar os documentos, com a utilização de mecanismos de inteligência artificial para categorizar cada ato e organizá-los por entidades relevantes permitindo a filtragem e priorização da informação. O Diário do Clima será uma plataforma que ajudará principalmente jornalistas e comunicadores.
+
+O maior desafio da solução é selecionar os diários oficiais que tenham informações relevantes no âmbito do jornalismo ambiental e climático. Por isso essa iniciativa possui a colaboração de sete organizações: [((o))Eco](https://oeco.org.br/), [Eco Nordeste](https://agenciaeconordeste.com.br/), [Agência Envolverde](https://envolverde.com.br/), [InfoAmazonia](https://infoamazonia.org/), [ClimaInfo](https://climainfo.org.br/), [#Colabora](https://projetocolabora.com.br/) e [Política por Inteiro](https://www.politicaporinteiro.org/). O objetivo final do projeto é ter uma plataforma aberta em que possa servir de consulta para rastrear o que foi desenvolvido nos municípios quanto à temática ambiental para ter controle e manter transparência nos atos.  
+
+A principal diferença dessa palataforma com a que foi criada pelo Querido Diário diz respeito ao escopo. O Querido Diário buscava filtrar os diários municipais sem conteúdo estruturado, em contrapartida o Diário do Clima busca concentrar em uma plataforma de visualização apenas diários oficiais que tenham conteúdos onde hajam informações relevantes relacionadas ao meio ambiente e clima nos municípios brasileiros. Dessa maneira será possível manter um banco de informações confiável e acessível corroborando com a proposta da [Google News Initiative](https://newsinitiative.withgoogle.com/) construindo um ecossistema de notícias mais sustentável, diversificado e inovador. Por trás do projeto trabalha uma imensa equipe formada desde cientista de dados a jornalistas, criando uma plataforma plural e acessível.
+
+
+      - Quais informações serão coletadas?
+      - Escopo/objetivo do diário do clima.

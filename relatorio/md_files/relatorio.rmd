@@ -64,7 +64,7 @@ Parágrafo sobre os diferentes projetos:
 Histórico (o que veio com a pandemia/Fundação Lemann/Lemann - Ensino remoto/Diário do Clima)
 O projeto Querido Diário não surgiu do nada, ele veio inspirado pela [Operação Serenata de Amor](https://serenata.ai/) que criou a Rosie, uma robô que através de inteligência artficial consegue rastrear irregularidades nos gastos do Congresso Nacional. E também do [Open Data Index](https://ok.org.br/projetos/open-data-index/) A OKBR já tinha uma ideia de acessibilizar os diários oficiais e com tantas outras conquistas foi possível aproveitar o conhecimento acumulado para criar o projeto Querido Diário. Atualmente, a equipe da OKBR também atua em outros projetos e desde o início da pandemia da COVID-19 foram realizados projetos voltados para solucionar problemas relacionados a transparênca de dados.. O projeto ´[Sorria #Estamos Vigiando](https://ok.org.br/projetos/sorria-estamosvigiando/), [Monitor da INDA](https://ok.org.br/inda/), [Transparência COVID-19](https://transparenciacovid19.ok.org.br/).
 
-Com uma equipe qualificada experiência e capacidade o Querido Diário compila os diários oficiais de todos os municípios brasileiros através de inteligência artifical. O projeto possui código aberto, ou seja, qualquer pessoa pode contribuir no projeto ou entender como a programação é arquitetad. De maneira simplificada os diários oficias são coletados dos seus respectivos endereços eletrônicos e submetidos a raspadores (_spiders_) em que filtram o resultado para extrair informações como o formato do arquivo, tamanho e ser convertido em um documento acessível de PDF, concomitantemente são extraídas outras informações do arquivo como data, seção do diário que são armazenadas em uma base de metadados. ...  Onde fica o arquivo bruto são extraídos o texto em formato TXT em formato aberto. Onde estão os metadados é realizado uma busca textual com o mecanismo de busca de análise de dados ElasticSearch, onde é possível indexar as informações dos diários e armazená-las centralmente facilitando futuras buscas. Após isso, uma interação entre os indexadores do ElasticSearch e o texto puro é realizada passando estes dados para a Interface de Programação de Aplicações (API) (usado pela máquina) que é integrada a uma [platadorma de visualização](https://queridodiario.ok.org.br/) para o usuário.
+Com uma equipe qualificada experiência e capacidade o Querido Diário compila os diários oficiais de todos os municípios brasileiros através de inteligência artifical. O projeto possui código aberto, ou seja, qualquer pessoa pode contribuir no projeto ou entender como a programação é arquitetada. De maneira simplificada os diários oficias são coletados dos seus respectivos endereços eletrônicos e submetidos a raspadores (_spiders_) em que filtram o resultado para extrair informações como o formato do arquivo, tamanho e ser convertido em um documento acessível de PDF, concomitantemente são extraídas outras informações do arquivo como data, seção do diário que são armazenadas em uma base de metadados. ...  Onde fica o arquivo bruto são extraídos o texto em formato TXT em formato aberto. Onde estão os metadados é realizado uma busca textual com o mecanismo de busca de análise de dados ElasticSearch, onde é possível indexar as informações dos diários e armazená-las centralmente facilitando futuras buscas. Após isso, uma interação entre os indexadores do ElasticSearch e o texto puro é realizada passando estes dados para a Interface de Programação de Aplicações (API) (usado pela máquina) que é integrada a uma [platadorma de visualização](https://queridodiario.ok.org.br/) para o usuário.
 
 
                 - Mapeamento dos diários
@@ -201,6 +201,7 @@ A recuperação de informações (RI) pode ser feita através de um sistema que 
     
   *_Booleana_*
   
+  
       Uma consulta que corresponde a documentos correspondentes a combinações booleanas de outras consultas. A consulta é construída usando uma ou mais cláusulas booleanas, cada cláusula com uma ocorrência digitada. Os tipos de ocorrência são:
       - must: O termo deve, obrigatoriamente, aparecer no documento.
       - filter: O termos deve aparecer nos documentos correspondentes.
@@ -214,6 +215,7 @@ A recuperação de informações (RI) pode ser feita através de um sistema que 
       
   *_Fuzzy_*
   
+  
      Retorna documentos que contêm termos semelhantes ao termo de pesquisa medido por uma distância de edição. Uma distância de edição é o número de alterações de um caractere necessárias para transformar um termo em outro. Essas mudanças podem incluir:
 
 - Mudando um personagem (box → fox)
@@ -224,6 +226,7 @@ A recuperação de informações (RI) pode ser feita através de um sistema que 
    Para encontrar termos semelhantes, a consulta do tipo fuzzy cria um conjunto de todas as variações ou expansões possíveis do termo de pesquisa dentro de uma distância de edição especificada. A consulta retorna correspondências exatas para cada expansão.
   
   *_Expressões regulares_*
+  
   
     Retorna documentos que contêm termos que correspondem a uma expressão regular. Uma expressão regular é uma maneira de combinar padrões em dados usando caracteres de espaço reservado, chamados de operadores. Para obter uma lista de operadores suportados pela consulta regexp.
 

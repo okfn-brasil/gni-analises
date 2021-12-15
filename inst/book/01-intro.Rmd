@@ -2,4 +2,7 @@
 
 Imagine se fosse poss√≠vel acessar uma √∫nica p√°gina na internet que centralizasse todas as informa√ß√µes sobre pol√≠tica ambiental no Brasil. A pessoa usu√°ria visitaria o *website*, faria buscas por pol√≠ticas p√∫blicas, por atos normativos, por unidade federativa ou por ano e baixaria os resultados de sua busca de maneira organizada. De forma f√°cil e r√°pida, esta pessoa poderia fazer pesquisa cient√≠fica ou aplicada, escrever artigos jornal√≠sticos de interesse ambiental ou at√© monitorar a a√ß√£o de administra√ß√µes p√∫blicas em √°reas sens√≠veis do Brasil.
 
-Esse site, infelizmente, n√£o existe... mas n√£o por muito tempo! (expandir...)
+Essa È a proposta do Di·rio do Clima, que busca centralizar essas informaÁıes a partir da coleta e filtro nos di·rios oficiais de todos os 5.570 municÌpios brasileiros. A equipe da Open Knowledge Brasil j· possui experiÍncia na coleta de Di·rios Oficiais dos municÌpios atravÈs do Projeto [Querido Di·rio](https://queridodiario.ok.org.br/) que iniciou em 2019. Nessa etapa, junto com mais sete organizaÁıes, organizamos um mecanismo de inteligÍncia artificial capaz de separar documentos que tem relaÁ„o com a tem·tica de meio ambiente e clima, facilitando o acesso de jornalistas e comunicadores e tambÈm como forma de facilitar a fiscalizaÁ„o e cobranÁa da polÌtica ambiental nos municÌpios.
+
+Estamos felizes em te ver interessadx nesse projeto! Para saber com mais detalhes sobre como tudo isso È feito vocÍ pode fazer a leitura desse documento na Ìntegra.
+
