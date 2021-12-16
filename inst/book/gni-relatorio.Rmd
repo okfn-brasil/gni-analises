@@ -114,11 +114,6 @@ A principal diferen�a dessa palataforma com a que foi criada pelo Querido Di�rio
 
 <!--chapter:end:04-politica-ambiental-no-brasil.Rmd-->
 
----
-output:
-  html_document: default
-  pdf_document: default
----
 # Metodologia {#metodologia}
 
 A metodologia de trabalho foi sub-dividida em cinco etapas, sendo: Pr?-processamento, mecanismos de busca, stopwords e stoplists, refinamento e avalia??o de precis?o. Cada uma delas será explorada nessa seção.
@@ -177,29 +172,33 @@ Para este projeto foram utilizados seis tipos de busca, a saber:
    
    O processo de cria??o das palavras de busca é acompanhado de um longo trabalho envolvendo uma curadoria de jornalistas especializados. Foram selecionados voluntariamente sete jornalistas para compor a equipe de curadoria e avaliar os documentos coletados atrav?s dos mecanismos de busca e avaliar qualitativamente os resultados. 
    
-   Para esta fase do projeto os curadores irão avaliar cerca de 768 termos de busca. Na primeira etapa serão gerados 488 termos acompanhados de excertos dos Diários Oficiais coletados, denominados de _highlights_. A partir dos resultados da primeira etapa será necessário mais duas etapas para concluir o processo.
+   Para esta fase do projeto os curadores irão avaliar cerca de 776 termos de busca. Na primeira etapa serão gerados 488 termos acompanhados de excertos dos Diários Oficiais coletados, denominados de _highlights_. A partir dos resultados da primeira etapa será necessário mais duas avaliações de 144 termos para concluir o processo.
    
-   Essa etapa é crucial para a determinação do escopo do projeto, ou seja, o que será encontrado na platadorma Diário do Clima. 
+   A definição das stopwords e stoplists é crucial para a determinação do escopo do projeto, ou seja, o que será encontrado na platadorma Diário do Clima. 
    
 >> **4** Avalia??o de precis?o
 
-A avaliação de precisão é realizada concomitantemente com as criações de stopwords e stoplists, já que estas duas etapas são interdependentes. As avaliações serão divididas em análise quantitativa e qualitativa.
+A avaliação de precisão é realizada concomitantemente com as criações de stopwords e stoplists, já que estas duas etapas são interdependentes. 
+
+   Na avaliação feita pelos curadores, existem dois parâmetros que podem ser explorados, um deles diz respeito se o documento possui o escopo adequado (positivo) ou não (negativo) e o outro é com relação aos comentários dos curadores no documento, sendo este indicador opcional. Na distribuição dos termos, há ainda mais um parâmetro que também pode ser adicionado, que é a qualidade dos documentos baseados nas palavras coletadas via ElasticSearch, assim os primeiros documentos possuem uma qualidade teórica maior do que aqueles que vem por último para cada termo de busca.
+   
+   Todos os documentos são avaliados, portanto é possível tirar conclusões muito importantes para o desenvolvimento das buscas nos Diários Oficiais dos municípios. As avaliações serão divididas em análises quantitativa e qualitativa.
 
  * **Quantitativa**
-  An?lise de dados..
-  - ?ndices positivos e negativos;
-  - Rela??o Qualidade do documento do ElasticSearch X Curadoria;
-  - Qualidade dos highlights.
-Seguindo a equa??o 1
+ 
+ A análise quantitativa se baseará em duas principais relações: Índices positivos e negativos de busca, relação entre qualidade do documento ElasticSearch versus qualidade pela Curadoria.
+ 
+ O primeiro inferirá sobre a distribuição das avaliaçõe negativas e positivas dos documentos, podendo então saber se os documentos coletados estão coerentes com o objetivo da plataforma. O segundo ajudará a melhorar a qualidade traçando uma relação entre os índices de qualidade pelo Elastic Search e a quantidade de índices positivos ou negativos daquela busca.
 
-  * **Quanlitativa**
+  * **Qualitativa**
+  
+    A análise qualitativa será realizada para observar o conteúdo dos highlights e comentários realizados. Assim, será possível avaliar se os highlights selecionados são adequados ao escopo do documento que ele faz parte
    
 >> **5** Refinamento
 
    Ap?s a coleta dos documentos e defini??o dos termos de busca ser? feita uma nova rodada de coleta de documentos para refinar os processos de busca. Essa etapa ? necess?ria para deixar a plataforma mais eficaz e amig?vel, bem como melhorar o processamento dos documentos. 
    
    Esse processo vai de encontro com o que foi elencado na seção de Política ambiental no Brasil, onde puderam ser explorados os principais marcos da política ambiental brasileira bem como a avaliação dos documentos pelos curadores.Dessa forma, a plataforma será um grande êxito para os jornalistas e comunicadores que acompanham nóticias sobre clima e meio ambiente no Brasil. 
-
 
 
 ## Um Diário Municipal
@@ -214,22 +213,15 @@ Seguindo a equa??o 1
 
 
 
-
-
 <!--chapter:end:05-metodologia.Rmd-->
 
 # Resultados {#resultados}
- A partir dos passos traçados na metodologia foi possível criar
-Escopo da plataforma:
-- [temático] Acompanhamento de implementação de políticas nacionais em âmbito municipal
-- Web app responsivo
-- Plataforma que permite interagir com o QD e receber as publicações relacionadas ao tema
 
-Serviços e funcionalidades:
-- Interação com a API do QD para permitir buscas e filtros
-- Cadastro para que clientes possam receber um feed de publicações relacionadas ao tema, com possibilidade de filtros
-- Serviço de push de notificações e/ou email
-- Definir se vamos descartar a ideia de relatórios ou não
+ A partir dos passos traçados na metodologia foi possível criar um aplicativo online do tipo responsivo, ou seja, que adapta a sua tela dependendo do dispositivo de visualização, onde é possível acompanhar a implementação de políticas nacionais relacionadas a meio ambiente e clima no âmbito municipal.
+ 
+ Essa plataforma é uma interação com o Querido Diário, portanto, recebe uma fatia daqueles Diários que contemplam o tema do Diário do Clima. Pelo mesmo motivo, é possível fazer buscas e filtros no próprio Querido Diário e conseguir uma parcela do mesmo tipo de retorno.
+
+
 ## Geral
 
 ## Exemplo 01
@@ -244,7 +236,7 @@ Serviços e funcionalidades:
 
 # Desenvolvimento Futuro {#desenvolvimento-futuro}
 
--
+  Para os próximos passos deseja-se que o Diário do Clima aceite cadastros de clientes para receberem conteúdos relacionados ao tema de interesse, sendo possível filtrar determinados assuntos. Também almeja-se um serviço de push de notificações e/ou email.
 
 <!--chapter:end:07-desenvolvimento-futuro.Rmd-->
 
