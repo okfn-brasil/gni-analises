@@ -1,5 +1,15 @@
 # Resultados {#resultados}
+ A partir dos passos traçados na metodologia foi possível criar
+Escopo da plataforma:
+- [temático] Acompanhamento de implementação de políticas nacionais em âmbito municipal
+- Web app responsivo
+- Plataforma que permite interagir com o QD e receber as publicações relacionadas ao tema
 
+Serviços e funcionalidades:
+- Interação com a API do QD para permitir buscas e filtros
+- Cadastro para que clientes possam receber um feed de publicações relacionadas ao tema, com possibilidade de filtros
+- Serviço de push de notificações e/ou email
+- Definir se vamos descartar a ideia de relatórios ou não
 ## Geral
 
 ## Exemplo 01

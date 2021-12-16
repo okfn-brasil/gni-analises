@@ -1,0 +1,262 @@
+--- 
+title: 'Open Knowledge Brasil: DiÃ¡rio do Clima'
+author: 'Equipe OKBR'
+date: "`r Sys.setlocale('LC_TIME', 'pt_BR.UTF-8');format(Sys.Date(), '%d de %B de %Y')`"
+knit: "bookdown::render_book"
+nocite: "@*"
+fontsize: 12pt
+colorlinks: yes
+toc-title: SumÃ¡rio
+loa-title: Lista de abreviaturas e siglas
+paged-footnotes: yes
+site: bookdown::bookdown_site
+documentclass: book
+# bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: 'Este relatÃ³rio contÃ©m o propÃ³sito e os componentes do projeto DiÃ¡rio do Clima, conduzido pelo Projeto Colabora e operacionalizado pela Open Knowledge Ddo Brasil.'
+---
+
+
+<!--chapter:end:index.Rmd-->
+
+# IntroduÃ§Ã£o {#intro}
+
+Imagine se fosse possÃ­vel acessar uma Ãºnica pÃ¡gina na internet que centralizasse todas as informaÃ§Ãµes sobre polÃ­tica ambiental no Brasil. A pessoa usuÃ¡ria visitaria o *website*, faria buscas por polÃ­ticas pÃºblicas, por atos normativos, por unidade federativa ou por ano e baixaria os resultados de sua busca de maneira organizada. De forma fÃ¡cil e rÃ¡pida, esta pessoa poderia fazer pesquisa cientÃ­fica ou aplicada, escrever artigos jornalÃ­sticos de interesse ambiental ou atÃ© monitorar a aÃ§Ã£o de administraÃ§Ãµes pÃºblicas em Ã¡reas sensÃ­veis do Brasil.
+
+Essa é a proposta do Diário do Clima, que busca centralizar essas informações a partir da coleta e filtro nos diários oficiais de todos os 5.570 municípios brasileiros. A equipe da Open Knowledge Brasil já possui experiência na coleta de Diários Oficiais dos municípios através do Projeto [Querido Diário](https://queridodiario.ok.org.br/) que iniciou em 2019. Nessa etapa, junto com mais sete organizações, organizamos um mecanismo de inteligência artificial capaz de separar documentos que tem relação com a temática de meio ambiente e clima, facilitando o acesso de jornalistas e comunicadores e também como forma de facilitar a fiscalização e cobrança da política ambiental nos municípios.
+
+Estamos felizes em te ver interessadx nesse projeto! Para saber com mais detalhes sobre como tudo isso é feito você pode fazer a leitura desse documento na íntegra.
+
+
+<!--chapter:end:01-intro.Rmd-->
+
+# O que Ã© o Querido DiÃ¡rio? {#queridodiario}
+
+O DiÃ¡rio Oficial da UniÃ£o (DOU) Ã© um importante veÃ­culo de comunicaÃ§Ã£o nacional, criado em 1Â° de outubro de 1862, sancionado pela Lei Imperial nÂº 1.177 (54 anos apÃ³s a chegada da corte portuguesa ao Brasil). Sua funÃ§Ã£o, desde entÃ£o, Ã© divulgar as leis e normas do paÃ­s, de forma simples, direta e documental, sem qualquer tipo de contestaÃ§Ã£o ou queixa; em outras palavras, este Ã© o instrumento em que o governo presta contas Ã  sociedade ([Lara, 20xx](link)). Atualmente  o DOU pode ser acessado atravÃ©s do [link da Imprensa Nacional](https://www.gov.br/imprensanacional/pt-br) permitindo buscas por palavras-chave ou buscas avanÃ§adas que permitem o filtro por seÃ§Ãµes, data, tÃ­tulos ou conteÃºdo, entre outros. As seÃ§Ãµes bÃ¡sicas do DOU sÃ£o:
+
+1. Leis, decretos, resoluÃ§Ãµes, instruÃ§Ãµes normativas, portarias e outros atos normativos de interesse geral;
+2. Atos de interesse dos servidores da AdministraÃ§Ã£o PÃºblica Federal;
+3.  Extratos de instrumentos contratuais (acordos, ajustes, autorizaÃ§Ãµes de compra, contratos, convÃªnios, ordens de execuÃ§Ã£o de serviÃ§o, termos aditivos e instrumentos congÃªneres) editais de citaÃ§Ã£o, intimaÃ§Ã£o, notificaÃ§Ã£o e concursos pÃºblicos, comunicados, avisos de licitaÃ§Ã£o entre outros atos da administraÃ§Ã£o pÃºblica decorrentes de disposiÃ§Ã£o legal.
+
+Por conter tantas informações relevantes, o DOU é utilizado como fonte em diferentes níveis de pesquisa, principalmente para recuperação de informações. [Guerra et al. (2015)](https://www.scielo.br/j/rap/a/cXjcx6hgZ4r5XN3t6rd7SSJ/?lang=en), por exemplo, analisa a resposta das agências reguladoras no combate a COVID-19 através da busca de conteúdo no DOU e também das 11 agências reguladoras no país. Outros estudos contemplam a  análise regulatória de medicamentos no Brasil [(Feitoza-Silva et al., 2017)]( http://dx.doi.org/10.11606/issn.2316-9044.v18i2p122-156) e a inferência sobre risco de fraude nos contratos públicos  [(Lima et al., 2020)](https://aclanthology.org/2020.findings-emnlp.143.pdf).
+
+Embora o DOU receba a maior parte da atenÃ§Ã£o da pesquisa de atos administrativos no Brasil, a exigÃªncia de publicidade de informaÃ§Ãµes nÃ£o se limita ao Poder Executivo Federal. Outras entes federados (Estados e MunicÃ­pios) e poderes (JudiciÃ¡rio e Legislativo) tambÃ©m possuem meios prÃ³prios de publicaÃ§Ã£o de atos pÃºblicos. No entanto, poucos estudos mencionam Diários Oficiais Municipais. [Xavier et al.(2015)](https://www.scielo.br/j/tinf/a/mJmTKbL94hj89q9p8HfCnLj/?format=pdf&lang=pt) propuseram uma arquitetura híbrida de indexação do Diário Municipal de Cachoeiro de Itapemirim - ES. Uma das razões pela qual é escasso o acesso a Diários Oficiais do Municííos é porque estes não são diretamente acessíveis, em funÃ§Ã£o da sua quantidade e diversidade. SÃ£o 5.570 municÃ­pios brasileiros com diferentes fontes de publicaÃ§Ã£o, formatos de arquivos, disponibilidade temporal e muitas outras barreiras de acesso Ã  informaÃ§Ã£o.
+
+O projeto Querido Diário não surgiu do nada, ele veio inspirado pela [Operação Serenata de Amor](https://serenata.ai/) que criou a Rosie, uma robô que através de inteligência artificial consegue rastrear irregularidades nos gastos do Congresso Nacional. E também do [Open Data Index](https://ok.org.br/projetos/open-data-index/) A OKBR já tinha uma ideia de acessibilizar os diários oficiais e com tantas outras conquistas foi possível aproveitar o conhecimento acumulado para criar o projeto Querido Diário. Atualmente, a equipe da OKBR também atua em outros projetos e desde o início da pandemia da COVID-19 foram realizados projetos voltados para solucionar problemas relacionados a transparênca de dados.. O projeto ´[Sorria #Estamos Vigiando](https://ok.org.br/projetos/sorria-estamosvigiando/), [Monitor da INDA](https://ok.org.br/inda/), [Transparência COVID-19](https://transparenciacovid19.ok.org.br/).
+
+O projeto _Querido DiÃ¡rio_ busca **mapear, coletar e processar todos os diÃ¡rios municipais do paÃ­s e disponibilizÃ¡-los em formato aberto para a sociedade civil**. Para realizar essas trÃªs tarefas, a Open Knowledge Brasil conta com uma equipe de pessoas cientistas e engenheiras de dados e uma grande comunidade de pessoas colaboradoras voluntÃ¡rias.
+
+## Status
+
+(ATUALIZAR DADOS)
+
+Para mapear diários oficiais municipais e extrair informações relevantes foi necessário compreender qual é a dimensão e escopo de um diário oficial municipal. Segundo o [Diário Oficial do município de São Paulo](http://www.docidadesp.imprensaoficial.com.br/Busca.aspx) o jornal é dividido em oito seções: Gabinete do Prefeito, Secretarias, Servidores, Concursos, Editais, Licitações, Câmara Municipal e Tribunal de Conta
+Um diário municipal está, teoricamente, categorizado logicamente em algumas seções. Essas seções correspondem a exigências legais de publicação de atos públicos. Contudo, como os municípios não seguem padrão uniforme de divulgação de informações, essas seções podem não ter títulos comuns ou mesma estrutura e nem são publicadas em todos os diários - afinal, nem sempre todos os atos públicos cuja publicação é exigida por lei ocorrem todos os dias. De modo geral, as seções obrigatórias são:
+
+- Atos Normativos: Obrigações ou direitos aos cidadãos fruto de atividade do poder executivo (ou legislativo) municipal. 
+- Atos de Pessoal: Mudanças nas atividades dos funcionários municipais, contemplando ingresso em carreira pública, exoneração, concessão de afastamento temporário, etc.
+- Contas Públicas: Obrigações de dívida dos municípios e peça orçamentária em respeito à LRF.
+- Audiências Públicas: Informes para a população sobre audiências públicas referentes à atividade do governo municipal e implementação de políticas públicas locais.
+- Licitações: Informes sobre os principais instrumentos de contratação de bens e serviços privados no Brasil pelo setor público.
+- Processos Disciplinares: Informes de processos investigativos e disciplinares sobre conduta de servidores públicos ou contratantes do poder executivo municipal.
+- Processos Tributários: Informes de acórdãos entre o fisco municipal e os contribuintes em processos administrativos tributários que afetam a arrecadação do município.
+- Conselhos Municipais: Informes sobre a fiscalização de políticas públicas por parte da sociedade civil.
+
+Com uma equipe qualificada experiência e capacidade o Querido Diário compila os diários oficiais de todos os municípios brasileiros através de inteligência artifical. O projeto possui código aberto, ou seja, qualquer pessoa pode contribuir no projeto ou entender como a programação é arquitetada. De maneira simplificada os diários oficias são coletados dos seus respectivos endereços eletrônicos e submetidos a raspadores (_spiders_) em que filtram o resultado para extrair informações como o formato do arquivo, tamanho e ser convertido em um documento acessível de PDF, concomitantemente são extraídas outras informações do arquivo como data, seção do diário que são armazenadas em uma base de metadados. ...  Onde fica o arquivo bruto são extraídos o texto em formato TXT em formato aberto. Onde estão os metadados é realizado uma busca textual com o mecanismo de busca de análise de dados ElasticSearch, onde é possível indexar as informações dos diários e armazená-las centralmente facilitando futuras buscas. Após isso, uma interação entre os indexadores do ElasticSearch e o texto puro é realizada passando estes dados para a Interface de Programação de Aplicações (API) (usado pela máquina) que é integrada a uma [platadorma de visualização](https://queridodiario.ok.org.br/) para o usuário.
+
+Atualmente, quase todos os diÃ¡rios dos 5.570 municÃ­pios brasileiros jÃ¡ foram mapeados pela nossa comunidade. Isto significa que sabemos onde esses diÃ¡rios sÃ£o publicados, qual sua cobertura temporal e qual o tipo de arquivo em que estes diÃ¡rios sÃ£o publicados.
+
+Destes municÃ­pios, nÃ³s tambÃ©m jÃ¡ temos raspadores de diÃ¡rios para mais de 2.300 municÃ­pios, cerca de 41% do total. Disponibilizamos esses dados via API aberta ao pÃºblico, disponÃ­vel aqui. Por necessidade de verificaÃ§Ã£o dos dados coletados, estÃ£o disponÃ­veis na API apenas diÃ¡rios de 13 capitais brasileiras.
+
+Com relaÃ§Ã£o ao processamento do texto dos diÃ¡rios, nÃ³s jÃ¡ somos capazes de converter qualquer formato de diÃ¡rio (PDF, Docx, RTF, HTML, JPEG, etc.) em .txt e fazer a extraÃ§Ã£o e validaÃ§Ã£o de CPFs e CNPJs dos diÃ¡rios oficiais. Contudo, ainda hÃ¡ muito o que fazer em termos de extraÃ§Ã£o de informaÃ§Ã£o nÃ£o-estruturada e sua subsequente estruturaÃ§Ã£o.
+
+### Próximos passos
+
+Como o interesse da sociedade civil por conteúdo de diários oficiais normalmente é focado em um tema, a segmentação do diário surge como nossa primeira prioridade de ciência de dados, uma vez que nos permitiria "fatiar" o conteúdo e permitir buscas apenas em seções desejadas. Portanto, uma tarefa fundamental para a equipe da OKBR seria uma forma automatizada de segmentação do diário nestas categorias.
+
+<!--chapter:end:02-querido-diario.Rmd-->
+
+# O que Ã© o DiÃ¡rio do Clima? {#diariodoclima}
+
+A partir do prêmio da Inovação promovido pela _Google News Initiative_ foi possível o início do Projeto Diário do Clima que visa monitorar os atos de autorização e normativos relacionados a meio ambiente e clima publicados diariamente nos diários oficiais em todos os municípios brasileiros. A partir dos passos avançados pelo Querido Diário é possível aplicar algumas das técnicas previamente utilizadas na plataforma Diário do Clima. Para o projeto ser possível é necessário raspar e processar os documentos, com a utilização de mecanismos de inteligência artificial para categorizar cada ato e organizá-los por entidades relevantes permitindo a filtragem e priorização da informação. O Diário do Clima será uma plataforma que ajudará principalmente jornalistas e comunicadores.
+
+O maior desafio da solução é selecionar os diários oficiais que tenham informações relevantes no âmbito do jornalismo ambiental e climático. Por isso essa iniciativa possui a colaboração de sete organizações: [((o))Eco](https://oeco.org.br/), [Eco Nordeste](https://agenciaeconordeste.com.br/), [Agência Envolverde](https://envolverde.com.br/), [InfoAmazonia](https://infoamazonia.org/), [ClimaInfo](https://climainfo.org.br/), [#Colabora](https://projetocolabora.com.br/) e [Política por Inteiro](https://www.politicaporinteiro.org/). O objetivo final do projeto é ter uma plataforma aberta em que possa servir de consulta para rastrear o que foi desenvolvido nos municípios quanto à temática ambiental para ter controle e manter transparência nos atos.  
+
+A principal diferença dessa palataforma com a que foi criada pelo Querido Diário diz respeito ao escopo. O Querido Diário buscava filtrar os diários municipais sem conteúdo estruturado, em contrapartida o Diário do Clima busca concentrar em uma plataforma de visualização apenas diários oficiais que tenham conteúdos onde hajam informações relevantes relacionadas ao meio ambiente e clima nos municípios brasileiros. Dessa maneira será possível manter um banco de informações confiável e acessível corroborando com a proposta da [Google News Initiative](https://newsinitiative.withgoogle.com/) construindo um ecossistema de notícias mais sustentável, diversificado e inovador. Por trás do projeto trabalha uma imensa equipe formada desde cientista de dados a jornalistas, criando uma plataforma plural e acessível.
+
+
+      - Quais informações serão coletadas?
+      - Escopo/objetivo do diário do clima.
+
+<!--chapter:end:03-diario-do-clima.Rmd-->
+
+# PolÃ­tica Ambiental no Brasil {#politica-ambiental}
+
+- Constitui??o Federal
+- Independ?ncia pol?tica dos estados e munic?pios
+
+## CompetÃªncias da UniÃ£o (ou Federais)
+
+- PNMA
+- PNMC
+- Ã“rgÃ£os federais
+
+## CompetÃªncias Estaduais
+
+## CompetÃªncias Municipais
+
+## CooperaÃ§Ã£o Internacional
+
+- ?
+
+
+
+<!--chapter:end:04-politica-ambiental-no-brasil.Rmd-->
+
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+# Metodologia {#metodologia}
+
+A metodologia de trabalho foi sub-dividida em cinco etapas, sendo: Pr?-processamento, mecanismos de busca, stopwords e stoplists, refinamento e avalia??o de precis?o. Cada uma delas serÃ¡ explorada nessa seÃ§Ã£o.
+
+
+>> **1** Pr?-processamento
+
+Processo realizado previamente pelo Querido Di?rio, consiste em mapear os Di?rios Oficiais Municipais, obter raspadores para cada um destes e ser capaz de converter os documentos em texto puro e metadados, armazenando atrav?s do ElasticSearch. 
+>> **2** Mecanismos de Busca
+
+A recupera??o de informa??es (RI) pode ser feita atrav?s de um sistema que funciona a partir de diferente mecanismos, sejam an?lise textual, filtragem de informa??o por meio da extra??o de stopwords, t?cnicas de redu??o de palavras a seus radicais (stemming), t?cnicas de indexa??o, arquivo invertido, modelos matem?ticos e estat?sticos para a representa??o de documentos, de consultas e a defini??o de coeficientes de similaridades, estruturas de categoriza??o e de expans?o de consultas por meio da utiliza??o de Thesaurus (Aires, 2005).
+
+Para este projeto foram utilizados seis tipos de busca, a saber:
+
+  *_Intervalar_*
+  
+      Retorna documentos com base na ordem e proximidade dos termos correspondentes. A consulta de intervalos usa regras de correspond?ncia, constru?das a partir de um pequeno conjunto de defini??es. Essas regras s?o ent?o aplicadas aos termos de um campo especificado. As defini??es produzem sequ?ncias de intervalos m?nimos que abrangem termos em um corpo de texto. 
+    *Exemplo*:
+   
+  *_Querystring_*
+  
+      Aqui ? utilizada uma sintaxe para analisar e dividir o conjunto de caracteres de consulta fornecida com base em operadores booleanos como AND, NOT e OR. Cada texto ? analisado independente e ap?s isso s?o retornados os documentos. Tamb?m ? poss?vel utilizar a consulta query_string para criar uma pesquisa complexa que inclui caracteres vers?teis, pesquisas em v?rios campos e muito mais. A desvantagem desse m?todo ? que se a sintaxe for inv?lida um erro ser? retornado na busca.
+    *Exemplo*:
+    
+  *_Booleana_*
+  
+  
+      Uma consulta que corresponde a documentos correspondentes a combina??es booleanas de outras consultas. A consulta ? constru?da usando uma ou mais cl?usulas booleanas, cada cl?usula com uma ocorr?ncia digitada. Os tipos de ocorr?ncia s?o:
+      - must: O termo deve, obrigatoriamente, aparecer no documento.
+      - filter: O termos deve aparecer nos documentos correspondentes.
+      - should: O termo deve aparecer no documento.
+      - must_not: O termo n?o deve, obrigatoriamente, aparecer no documento.
+      
+ 
+  *_Boosting_*
+  
+      Retorna documentos que correspondem a uma consulta positiva enquanto reduz a pontua??o de relev?ncia dos documentos que correspondem a uma consulta negativa. Essa consulta permite rebaixar certos documentos sem exclu?-los dos resultados da pesquisa.
+      
+  *_Fuzzy_*
+  
+     Retorna documentos que cont?m termos semelhantes ao termo de pesquisa medido por uma dist?ncia de edi??o. Uma dist?ncia de edi??o ? o n?mero de altera??es de um caractere necess?rias para transformar um termo em outro. Essas mudan?as podem incluir:
+
+- Mudando um caracter que muda a palavra (gato ??? galo)
+- Removendo caracteres (acreditar ??? creditar)
+- Inserindo caracteres (calor ??? calorÃ­metro)
+- Transpondo caracteres adjacentes (papo ??? popa)
+     
+   Para encontrar termos semelhantes, a consulta do tipo fuzzy cria um conjunto de todas as varia??es ou expans?es poss?veis do termo de pesquisa dentro de uma dist?ncia de edi??o especificada. A consulta retorna correspond?ncias exatas para cada expans?o.
+  
+  *_Express?es regulares_*
+  
+  
+    Retorna documentos que cont?m termos que correspondem a uma express?o regular. Uma express?o regular ? uma maneira de combinar padr?es em dados usando caracteres de espa?o reservado, chamados de operadores. Para obter uma lista de operadores suportados pela consulta regexp.
+
+>> **3** Stopwords e Stoplists
+   
+   O processo de cria??o das palavras de busca Ã© acompanhado de um longo trabalho envolvendo uma curadoria de jornalistas especializados. Foram selecionados voluntariamente sete jornalistas para compor a equipe de curadoria e avaliar os documentos coletados atrav?s dos mecanismos de busca e avaliar qualitativamente os resultados. 
+   
+   Para esta fase do projeto os curadores irÃ£o avaliar cerca de 768 termos de busca. Na primeira etapa serÃ£o gerados 488 termos acompanhados de excertos dos DiÃ¡rios Oficiais coletados, denominados de _highlights_. A partir dos resultados da primeira etapa serÃ¡ necessÃ¡rio mais duas etapas para concluir o processo.
+   
+   Essa etapa Ã© crucial para a determinaÃ§Ã£o do escopo do projeto, ou seja, o que serÃ¡ encontrado na platadorma DiÃ¡rio do Clima. 
+   
+>> **4** Avalia??o de precis?o
+
+A avaliaÃ§Ã£o de precisÃ£o Ã© realizada concomitantemente com as criaÃ§Ãµes de stopwords e stoplists, jÃ¡ que estas duas etapas sÃ£o interdependentes. As avaliaÃ§Ãµes serÃ£o divididas em anÃ¡lise quantitativa e qualitativa.
+
+ * **Quantitativa**
+  An?lise de dados..
+  - ?ndices positivos e negativos;
+  - Rela??o Qualidade do documento do ElasticSearch X Curadoria;
+  - Qualidade dos highlights.
+Seguindo a equa??o 1
+
+  * **Quanlitativa**
+   
+>> **5** Refinamento
+
+   Ap?s a coleta dos documentos e defini??o dos termos de busca ser? feita uma nova rodada de coleta de documentos para refinar os processos de busca. Essa etapa ? necess?ria para deixar a plataforma mais eficaz e amig?vel, bem como melhorar o processamento dos documentos. 
+   
+   Esse processo vai de encontro com o que foi elencado na seÃ§Ã£o de PolÃ­tica ambiental no Brasil, onde puderam ser explorados os principais marcos da polÃ­tica ambiental brasileira bem como a avaliaÃ§Ã£o dos documentos pelos curadores.Dessa forma, a plataforma serÃ¡ um grande Ãªxito para os jornalistas e comunicadores que acompanham nÃ³ticias sobre clima e meio ambiente no Brasil. 
+
+
+
+## Um DiÃ¡rio Municipal
+
+## Mecanismos de Busca
+
+## Termos de Interesse
+
+## AnotaÃ§Ã£o e Controle de Qualidade
+
+
+
+
+
+
+
+<!--chapter:end:05-metodologia.Rmd-->
+
+# Resultados {#resultados}
+ A partir dos passos traÃ§ados na metodologia foi possÃ­vel criar
+Escopo da plataforma:
+- [temÃ¡tico] Acompanhamento de implementaÃ§Ã£o de polÃ­ticas nacionais em Ã¢mbito municipal
+- Web app responsivo
+- Plataforma que permite interagir com o QD e receber as publicaÃ§Ãµes relacionadas ao tema
+
+ServiÃ§os e funcionalidades:
+- InteraÃ§Ã£o com a API do QD para permitir buscas e filtros
+- Cadastro para que clientes possam receber um feed de publicaÃ§Ãµes relacionadas ao tema, com possibilidade de filtros
+- ServiÃ§o de push de notificaÃ§Ãµes e/ou email
+- Definir se vamos descartar a ideia de relatÃ³rios ou nÃ£o
+## Geral
+
+## Exemplo 01
+
+## Exemplo 02
+
+## Exemplo 03
+
+
+
+<!--chapter:end:06-resultados.Rmd-->
+
+# Desenvolvimento Futuro {#desenvolvimento-futuro}
+
+-
+
+<!--chapter:end:07-desenvolvimento-futuro.Rmd-->
+
+# ConclusÃ£o {#conclusao}
+
+-
+
+<!--chapter:end:08-conclusao.Rmd-->
+
+`r if (knitr::is_html_output()) '
+# ReferÃªncias {-}
+'`
+
+<!--chapter:end:09-referencias.Rmd-->
+
