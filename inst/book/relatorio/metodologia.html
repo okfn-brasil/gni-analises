@@ -76,6 +76,7 @@
 <li class="chapter" data-level="2" data-path="queridodiario.html"><a href="queridodiario.html"><i class="fa fa-check"></i><b>2</b> O que é o Querido Diário?</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="queridodiario.html"><a href="queridodiario.html#status"><i class="fa fa-check"></i><b>2.1</b> Status</a></li>
+<li class="chapter" data-level="2.2" data-path="queridodiario.html"><a href="queridodiario.html#saiba-mais"><i class="fa fa-check"></i><b>2.2</b> Saiba Mais</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="diariodoclima.html"><a href="diariodoclima.html"><i class="fa fa-check"></i><b>3</b> O que é o Diário do Clima?</a></li>
 <li class="chapter" data-level="4" data-path="politica-ambiental.html"><a href="politica-ambiental.html"><i class="fa fa-check"></i><b>4</b> Política Ambiental no Brasil</a>
@@ -124,6 +125,77 @@
             <section class="normal" id="section-">
 <div id="metodologia" class="section level1" number="5">
 <h1><span class="header-section-number">Capítulo 5</span> Metodologia</h1>
+<p>A metodologia de trabalho foi sub-dividida em cinco etapas, sendo: Pré-processamento, mecanismos de busca, stopwords e stoplists, refinamento e avaliação de precião. Cada uma delas será explorada nessa seção.</p>
+<blockquote>
+<blockquote>
+<p><strong>1</strong> Pré-processamento</p>
+</blockquote>
+</blockquote>
+<p>Processo realizado previamente pelo Querido Diário, consiste em mapear os Diários Oficiais Municipais, obter raspadores para cada um destes e ser capaz de converter os documentos em texto puro e metadados, armazenando através do ElasticSearch.</p>
+<blockquote>
+<blockquote>
+<p><strong>2</strong> Mecanismos de Busca</p>
+</blockquote>
+</blockquote>
+<p>A recuperação de informações (RI) pode ser feita através de um sistema que funciona a partir de diferentes mecanismos, sejam análise textual, filtragem de informação por meio da extração de stopwords, técnicas de redução de palavras a seus radicais, técnicas de indexação, arquivo invertido, modelos matemáticos e estatísticos para a representação de documentos, de consultas e a definição de coeficientes de similaridades, estruturas de categorização e de expansão de consultas por meio da utilização de Tesauro <a href="https://repositorio.ufmg.br/bitstream/1843/RRSA-6GGGUF/1/doutorado___renato_rocha_souza.pdf">Souza, 2005</a>.</p>
+<p>Para este projeto foram utilizados seis tipos de busca, a saber:</p>
+<p><em><em>Intervalar</em></em>
+Retorna documentos com base na ordem e proximidade dos termos correspondentes. A consulta de intervalos usa regras de correspondência, construídas a partir de um pequeno conjunto de definições. Essas regras são então aplicadas aos termos de um campo especificado. As definições produzem sequências de intervalos mínimos que abrangem termos em um corpo de texto.
+<em>Exemplo</em>:</p>
+<p><em><em>Querystring</em></em>
+Aqui é utilizada uma sintaxe para analisar e dividir o conjunto de caracteres de consulta fornecida com base em operadores booleanos como AND, NOT e OR. Cada texto é analisado independente e após isso são retornados os documentos. Também é possível utilizar a consulta query_string para criar uma pesquisa complexa que inclui caracteres versáteis, pesquisas em vários campos e muito mais. A desvantagem desse método é que se a sintaxe for inválida um erro será retornado na busca.
+<em>Exemplo</em>:</p>
+<p><em><em>Booleana</em></em>
+Uma consulta que corresponde a documentos correspondentes a combinações booleanas de outras consultas. A consulta é construída usando uma ou mais cláusulas booleanas, cada cláusula com uma ocorrência digitada. Os tipos de ocorrência são:
+<em>must</em> : O termo deve, obrigatoriamente, aparecer no documento.
+<em>filter</em> : O termo deve aparecer nos documentos correspondentes.
+<em>should</em> : O termo deve aparecer no documento.
+<em>must_not</em>: O termo não deve, obrigatoriamente, aparecer no documento.</p>
+<p><em><em>Boosting</em></em>
+Retorna documentos que correspondem a uma consulta positiva enquanto reduz a pontuação de relevância dos documentos que correspondem a uma consulta negativa. Essa consulta permite rebaixar certos documentos sem excluí-los dos resultados da pesquisa.</p>
+<p><em><em>Fuzzy</em></em>
+Retorna documentos que contém termos semelhantes ao termo de pesquisa medido por uma distância de edição. Uma distância de edição é o número de alterações de um caractere necessárias para transformar um termo em outro. Essas mudanças podem incluir:</p>
+<ul>
+<li><p>Mudando um caracter que muda a palavra (gato -&gt; galo)</p></li>
+<li><p>Removendo caracteres (acreditar -&gt; creditar)</p></li>
+<li><p>Inserindo caracteres (calor -&gt; calorímetro)</p></li>
+<li><p>Transpondo caracteres adjacentes (papo -&gt; popa)</p>
+<p>Para encontrar termos semelhantes, a consulta do tipo fuzzy cria um conjunto de todas as variações ou expansões possíveis do termo de pesquisa dentro de uma distância de edição especificada. A consulta retorna correspondências exatas para cada expansão.</p>
+<p><em><em>Express?es regulares</em></em>
+Retorna documentos que contém termos que correspondem a uma expressão regular. Uma expressão regular é uma maneira de combinar padrões em dados usando caracteres de espaço reservado, chamados de operadores. Para obter uma lista de operadores suportados pela consulta regexp.</p></li>
+</ul>
+<blockquote>
+<blockquote>
+<p><strong>3</strong> Stopwords e Stoplists</p>
+</blockquote>
+</blockquote>
+<p>O processo de criação das palavras de busca é acompanhado de um longo trabalho envolvendo uma curadoria de jornalistas especializados. Foram selecionados voluntariamente sete jornalistas para compor a equipe de curadoria e avaliar os documentos coletados através dos mecanismos de busca e avaliar qualitativamente os resultados.</p>
+<p>Para esta fase do projeto os curadores irão avaliar cerca de 776 termos de busca. Na primeira etapa serão gerados 488 termos acompanhados de excertos dos Diários Oficiais coletados, denominados de <em>highlights</em>. A partir dos resultados da primeira etapa será necessário mais duas avaliações de 144 termos para concluir o processo.</p>
+<p>A definição das stopwords e stoplists é crucial para a determinação do escopo do projeto, ou seja, o que será encontrado na platadorma Diário do Clima.</p>
+<blockquote>
+<blockquote>
+<p><strong>4</strong> Avaliação de precisão</p>
+</blockquote>
+</blockquote>
+<p>A avaliação de precisão é realizada concomitantemente com as criações de stopwords e stoplists, já que estas duas etapas são interdependentes.</p>
+<p>Na avaliação feita pelos curadores, existem dois parâmetros que podem ser explorados, um deles diz respeito se o documento possui o escopo adequado (positivo) ou não (negativo) e o outro é com relação aos comentários dos curadores no documento, sendo este indicador opcional. Na distribuição dos termos, há ainda mais um parâmetro que também pode ser adicionado, que é a qualidade dos documentos baseados nas palavras coletadas via ElasticSearch, assim os primeiros documentos possuem uma qualidade teórica maior do que aqueles que vem por último para cada termo de busca.</p>
+<p>Todos os documentos são avaliados, portanto é possível tirar conclusões muito importantes para o desenvolvimento das buscas nos Diários Oficiais dos municípios. As avaliações serão divididas em análises quantitativa e qualitativa.</p>
+<ul>
+<li><strong>Quantitativa</strong></li>
+</ul>
+<p>A análise quantitativa se baseará em duas principais relações: Índices positivos e negativos de busca, relação entre qualidade do documento ElasticSearch versus qualidade pela Curadoria.</p>
+<p>O primeiro inferirá sobre a distribuição das avaliaçõe negativas e positivas dos documentos, podendo então saber se os documentos coletados estão coerentes com o objetivo da plataforma. O segundo ajudará a melhorar a qualidade traçando uma relação entre os índices de qualidade pelo ElasticSearch e a quantidade de índices positivos ou negativos daquela busca.</p>
+<ul>
+<li><strong>Qualitativa</strong></li>
+</ul>
+<p>A análise qualitativa será realizada para observar o conteúdo dos highlights e comentários realizados. Assim, será possível avaliar se os highlights selecionados são adequados ao escopo do documento que ele faz parte</p>
+<blockquote>
+<blockquote>
+<p><strong>5</strong> Refinamento</p>
+</blockquote>
+</blockquote>
+<p>Após a coleta dos documentos e definição dos termos de busca será feita uma nova rodada de coleta de documentos para refinar os processos de busca. Essa etapa é necessária para deixar a plataforma mais eficaz e amigável, bem como melhorar o processamento dos documentos.</p>
+<p>Esse processo vai de encontro com o que foi elencado na seção de Política ambiental no Brasil, onde puderam ser explorados os principais marcos da política ambiental brasileira bem como a avaliação dos documentos pelos curadores.Dessa forma, a plataforma será um grande êxito para os jornalistas e comunicadores que acompanham nóticias sobre clima e meio ambiente no Brasil.</p>
 <div id="um-diário-municipal" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Um Diário Municipal</h2>
 </div>
