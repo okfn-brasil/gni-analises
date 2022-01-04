@@ -1,20 +1,59 @@
 # Política Ambiental no Brasil {#politica-ambiental}
 
-- Constituição Federal
-- Independência política dos estados e municípios
+### Cenário geral
+A [Constituição Federal](https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao.htm) é o principal documento legislativo brasileiro, ou lei suprema. O Brasil é um Estado Democrático de Direito sendo que a União, os Estados, o Distrito Fedral e os municípios são todos autônomos no termo da constituição. O artigo 24  regulamenta que inexistindo lei federal sobre normas gerais cabe ao Estado fazer o papel legislativo e atender a essas peculiaridades. O artigo 30 especifica que os municípios legislam sobre assuntos de interesse local e suplementam a legislação federal e estadual no que couber. Cabe a União, Estados, Distrito Federal e municípios proteger e preservar a fauna e flora e combater a poluição em qualquer uma de suas formas.
+
+Na Lei n° 8.028 de 1990 regulamenta que Secretaria do Meio Ambiente é órgão de consulta direta do Presidente da República tendo como função planejar, coordenar e supervisionar atividades relativas à Política Nacional do Meio Ambiente, preservando, conservando e utilizando racionalmente os recursos renováveis. A Política Nacional do Meio Ambiente (PNMA) ([Lei 6.938/81](https://www.planalto.gov.br/ccivil_03/LEIS/L6938.htm)) visa o desenvolvimento sócio-econômico atendendo aos princípios de ação governamental, racionalização, planejamento, proteção, controle e zoneamento das atividades, proteção e educação (Art. 2°) . Art 5º - As diretrizes da PNMA serão formuladas em normas e planos, destinados a orientar a ação dos Governos da União, dos Estados, do Distrito Federal, dos Territórios e dos Municípios no que se relaciona com a preservação da qualidade ambiental e manutenção do equilíbrio ecológico, observados os princípios estabelecidos no art. 2º desta Lei. Dessa forma, sua organização hierárquica é regulamentada pela lei da PNMA e alterações pelas leis n° 7.804 de 1989 e 8.028 de 1990 instituindo o Sistema Nacional de Meio Ambiente (SISNAMA), sendo:
+
+- Órgão superior: Conselho do governo
+- Órgão consultivo e deliberativo: Conselho Nacional do Meio Ambiente (Conama)
+- Órgão central: Secretaria do Meio Ambiente
+- Órgãos executores: Instituto Brasileiro de Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA) e Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio)
+- Órgãos seccionais: órgãos ou entidades estaduais responsáveis pela execução de programas, projetos e pelo controle e fiscalização de atividades capazes de provocar a degradação ambiental.
+-Órgãos locais: órgãos ou entidades municipais, responsáveis pelo controle e fiscalização dessas atividades, nas suas respectivas jurisdições
+
+Os instrumentos da PNMA são:
+* Licenciamento que integra o Estudo de Impacto Ambiental, a Análise de risco, o Plano de recuperação de áreas degradadas, a Avaliação Ambiental, Viabilidade ambiental e Cadastro Técnico Federal
+* Incentivos econômicos como o Fundo Nacional do Meio Ambiente e diferentes financiamentos do BNDES
+* Inibidores econômicos como o ICMS, a taxa de reposição florestal, a Taxa de Controle e Fiscalização Ambiental (TCFA), e o Fundo Nacional de Desenvolvimento Florestal
+* Punição: Lei dos Crimes Ambientais, Decreto Lei n° 6.514 de 22 de julho de 2008, Código Florestal
+* Conservação: Sistema Nacional de Unidades de Conservação, Corredores Ecológicos, Programa Piloto para a Proteção das Florestas Tropicais do Brasil (PPG7), restrição ao uso de recursos naturais nas propriedades privadas (Lei n° 4.771/65 e Resoluções do CONAMA), recuperação ambiental, auto suprimento e reposição florestal. 
+* Zoneamento ambiental: Zoneamento ecológico-econômico e ambiental e a avaliação de impacto ambiental. Este plano define as unidades ambientais em termos de área para uso intensivo, extensivo, de preservação e de uso múltiplo.Neste âmbito existem os planos diretores dos municípios que são a nível local e do estado, a nível regional. Muitas vezes não tem acesso.
+
+Em 1992 foi criado o [Ministério do Meio Ambiente (MMA)](https://www.gov.br/mma/pt-br/acesso-a-informacao/institucional) como um dos marcos da Rio-92, o IBAMA, ICMBio e também recentemente adicionado pelo [decreto n° 10.455 de 2020](https://www.in.gov.br/en/web/dou/-/decreto-n-10.455-de-11-de-agosto-de-2020-271717699) o Instituto de Pesquisas Jardim Botânico do Rio de Janeiro (JBRJ são entidades vinculadas ao MMA. A [Lei n° 12.187 de 2009](https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm) instituiu a Política Nacional de Mudança do Clima (PNMC), sendo esta atualmente supervisionada pelo MMA.
+
+A PNMC visa o desenvolvimento econômico sustentável com foco em redução da pobreza e desigualdades sociais. O objetivo da PNMC é mitigar os danos ambientais através de ações de mitigação e adaptação nos âmbitos local, regional e nacional. A PNMC adota como compromisso nacional voluntário as reduções de gases de efeito estufa entre 36,1% e 38,9% até 2020.
+
+Os instrumentos da _PNMC_ consistem nos Planos Nacionais de Mudança do Clima e prevenção de incêndios, nas medidas fiscais e tributárias destinadas a reduzir as emissões, assim como linhas de crédito, de financiamento e pesquisas relacionadas ao tema gerando indicadores de sustentabilidade como registros, inventários, estimativas, avaliações, dentre outros. Existem também instrumentos institucionais como a Rede Brasileira de Pesquisas sobre Mudanças Climáticas Globais (Rede Clima), o Comitê Interministerial de Mudança do Clima, entre outros.
+
+Os Fundos Nacionais do Meio Ambiente e de Mudança do Clima são gerenciados atualmente pelo MMA, sendo este o órgão superior do governo. Dentro da política ambiental, ao longo da história, houve muitas conquistas no que diz respeito a aceitação a pluralidade institucional para a resolução de problemas ambientais. A [Lei dos Crimes Ambientais de 1998](https://www.planalto.gov.br/ccivil_03/LEIS/L9605.htm), por exemplo, regulamente sobre as penas decorrentes a crimes ambientais cometidos no território brasileiro.
 
 ## Competências da União (ou Federais)
 
-- PNMA
-- PNMC
 - Órgãos federais
+_IBAMA_: Poder de polícia ambiental, responsável por recolher e repassar recursos da TCFA, Imposto Territorial Rural, Cadastro Ambiental Rural. Seus objetivos institucionais são relativos ao licenciamento ambiental, ao controle da qualidade ambiental, à autorização de uso dos recursos naturais e à fiscalização, monitoramento e controle ambiental e ações supletivas de competência da União, conforme legislação ambiental. Zoneamento e avaliação de impacto ambiental e Cadastro Técnico Federal.
+
+- CAR: Cadastro Ambiental Rural é o registro público eletrônico de âmbito nacional, obrigatório para todos os imóveis rurais, com a finalidade de integrar as informações ambientais das propriedades e posses rurais referentes às Áreas de Preservação Permanentes (APP), Áreas de Uso Restrito (AUR), Reserva Legal (RL), de remanescentes de florestas e demais formas de vegetação nativa, e das áreas consolidadas, compondo base de dados para controle, monitoramento, planejamento ambiental e econômico e combate ao desmatamento.
+- ITR: O CAR gera créditos tributários por meio de deduções na base  de cálculo do Imposto Territorial Rural
+- PRA: Programa de Apoio e Incentivo à Conservação do Meio Ambiente e aos Programas de Regularização Ambiental 
+- CTF: Cadastro Técnico Federal  identifica as pessoas físicas e jurídicas sob controle ambiental e fiscalização ambiental, conforme previsto em legislação federal ou de âmbito nacional, gerando informações para a gestão ambiental no Brasil.
+- TCFA: Taxa de Controle e Fiscalização Ambiental é um tributo para controle e fiscalização das atividades potencialmente poluidoras e utilizadoras de recursos naturais
+
+_ICMBio_:  Tem como função apresentar e editar normas e padrões de gestão de Unidades de Conservação (UC) federais; propor a criação, regularização fundiária e gestão das UC federais; e apoiar a implementação do Sistema Nacional de Unidades de Conservação (SNUC). Este órgãos contribui para a recuperação de áreas degradadas em UC. Fiscaliza e aplica penalidades administrativas ambientais ou compensatórias aos responsáveis pelo não cumprimento das medidas necessárias à preservação ou correção da degradação ambiental. Monitora o uso público e a exploração econômica dos recursos naturais nas UC onde isso for permitido, obedecidas as exigências legais e de sustentabilidade do meio ambiente. geração e disseminação sistemática de informações e conhecimentos relativos à gestão de UCs, da conservação da biodiversidade e do uso dos recursos faunísticos, pesqueiros e florestais.  Contribui para a implementação do Sistema Nacional de Informações sobre o Meio Ambiente (Sinima) e aplica, no âmbito de sua competência, dispositivos e acordos internacionais relativos à gestão ambiental. Elabora o Relatório de Gestão das UC.
+
+_Instituto de Pesquisa Jardim Botânico do Rio de Janeiro (JBRJ)_: É uma autarquia federal criada pela [Lei n° 10.316/2001](https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10316.htm), sua missão é realizar e difundir pesquisas relacionadas à flora brasileira com foco na conservação da biodiversidade. Sua estrutura é de pesquisa e este órgão responde diretamente ao MMA.
 
 ## Competências Estaduais
 
+Secretarias Estaduais de Meio Ambiente e Ministérios Públicos.
+Os órgãos estaduais podem ser acessados no site do [IBAMA](https://www.ibama.gov.br/flora-e-madeira/descentralizacao-da-gestao-florestal/competencias-do-ibama-e-dos-orgaos-estaduais-de-meio-ambiente). 
+
 ## Competências Municipais
+
+Cada Município tem suas respectivas secretarias que podem ser de diferentes nomes. É incumbência municipal fiscalizar, autuar e licenciar atividades relacionadas ao ambiente, bem como prover assistência técnica e reposição florestal, sendo estas atividades divididas com o Estado, a depender dos limites territoriais da atividade. 
 
 ## Cooperação Internacional
 
-- ?
+
 
 
