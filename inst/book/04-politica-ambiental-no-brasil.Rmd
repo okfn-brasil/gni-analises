@@ -1,6 +1,6 @@
 # Política Ambiental no Brasil {#politica-ambiental}
 
-### Cenário geral
+## Cenário geral
 A [Constituição Federal](https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao.htm) é o principal documento legislativo brasileiro, ou lei suprema. O Brasil é um Estado Democrático de Direito sendo que a União, os Estados, o Distrito Fedral e os municípios são todos autônomos no termo da constituição. O artigo 24  regulamenta que inexistindo lei federal sobre normas gerais cabe ao Estado fazer o papel legislativo e atender a essas peculiaridades. O artigo 30 especifica que os municípios legislam sobre assuntos de interesse local e suplementam a legislação federal e estadual no que couber. Cabe a União, Estados, Distrito Federal e municípios proteger e preservar a fauna e flora e combater a poluição em qualquer uma de suas formas.
 
 Na Lei n° 8.028 de 1990 regulamenta que Secretaria do Meio Ambiente é órgão de consulta direta do Presidente da República tendo como função planejar, coordenar e supervisionar atividades relativas à Política Nacional do Meio Ambiente, preservando, conservando e utilizando racionalmente os recursos renováveis. A Política Nacional do Meio Ambiente (PNMA) ([Lei 6.938/81](https://www.planalto.gov.br/ccivil_03/LEIS/L6938.htm)) visa o desenvolvimento sócio-econômico atendendo aos princípios de ação governamental, racionalização, planejamento, proteção, controle e zoneamento das atividades, proteção e educação (Art. 2°) . Art 5º - As diretrizes da PNMA serão formuladas em normas e planos, destinados a orientar a ação dos Governos da União, dos Estados, do Distrito Federal, dos Territórios e dos Municípios no que se relaciona com a preservação da qualidade ambiental e manutenção do equilíbrio ecológico, observados os princípios estabelecidos no art. 2º desta Lei. Dessa forma, sua organização hierárquica é regulamentada pela lei da PNMA e alterações pelas leis n° 7.804 de 1989 e 8.028 de 1990 instituindo o Sistema Nacional de Meio Ambiente (SISNAMA), sendo:
@@ -54,6 +54,6 @@ Cada Município tem suas respectivas secretarias que podem ser de diferentes nom
 
 ## Cooperação Internacional
 
+A promoção de acordos internacionais é essencial para a execução da proteção da fauna e flora visando o desenvolvimento sustentável brasileiro. Existem muitos projetos que possuem financiamentos internacionais que são inclusive investidos em instâncias municipais, como foi o Mecanismo de Desenvolvimento Limpo, portanto o capital externo e a cooperação internacional é essencial para a promoção da sustentabilidade e de execução dos planos. Dentro da PNMA há tributação para o Comércio internacional de fauna silvestre. A PNMC é fruto dos acordos Protocolo de Quioto e Convenção-Quadro Nações Unidas sobre Mudança do Clima.
 
-
-
+O [Decreto n° 10.455 de 11/08/2020](https://www.in.gov.br/en/web/dou/-/decreto-n-10.455-de-11-de-agosto-de-2020-271717699) aprova a estrutura regimental do MMA, sendo imprescindível a permanência e manutenção de relações e estratégias internacionais. À Secretaria-executiva do MMA deve supervisionar e coordenar os os programas com financimanentos de organismos internacionais, dos projetos e convênios. Ao Departamento de Relacões Internacionais do MMA compete propor diretrizes de política externa, desenvolver estratégias de apoio às políticas ambientais brasileiras.
