@@ -8,4 +8,11 @@ Além disso, os conteúdos de interesse devem estar identificados no texto e cat
 
 ## Contribuições do Diário do Clima ao Querido Diário
 
-O trabalho desenvolvido neste projeto expandirá o alcance e funcionalidades do Querido Diário de várias formas. A primeira elas é o cruzamento de bases de dados com conteúdo extraído dos diários.
+O trabalho desenvolvido neste projeto expandirá o alcance e funcionalidades do Querido Diário de várias formas. A primeira elas é o cruzamento de bases de dados com conteúdo extraído dos diários, que permitirá: (i) o enriquecimento do documento com reconhecimento de entidades (assuntos, tipos de publicação); (ii) a conexão com a base de dados da Receita Federal, para que seja possível adicionar elementos sobre as empresas (sócios, por exemplo), sempre que um CNPJ for identificado na publicação de interesse.
+
+Outra novidade que será desenvolvida e adicionada à API do QD é a opção de retornar, dos diários, apenas os trechos de conteúdo relacionados a uma temática predefinida (nesse caso, a temática ambiental) para realização de um filtro. As "entidades" (agrupamentos semânticos) encontradas nos trechos de conteúdo também devem ser adicionadas à resposta, e assim seria possível pesquisar dados da receita com entidades de CNPJ, por exemplo. Essa nova funcionalidade da API será fundamental para a geração de bases de dados que serão  consumidas por pessoas usuárias avançadas do QD.
+
+Finalmente, a API do QD nas cidades desejadas diariamente, ativando o filtro por temática. A plataforma agruparia os atos pelas entidades encontradas e buscaria os dados da Receita Federal na própria API para cada entidade 一 possibilitando, assim, que atos relevantes sejam analisados com mais profundidade pelos jornalistas, além da produção de relatórios e da criação de alertas ou notificações para usuários.
+
+
+
