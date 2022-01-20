@@ -1,39 +1,58 @@
 # Metodologia {#metodologia}
 
-A metodologia de trabalho foi sub-dividida em cinco etapas, sendo: Pré-processamento, mecanismos de busca, stopwords e stoplists, refinamento e avaliação de precião. Cada uma delas será explorada nessa seção.
+Para selecionar os diários e os conteúdos relevantes para as pessoas usuárias do Diário do Clima, nós utilizamos prioritariamente técnicas de processamento de linguagem natural (NLP, em inglês). Estas técnicas são compostas de regras lógicas ou modelos estatísticos que permitem que se estruture e interprete informação textual de forma automatizada. A ordem das tarefas analíticas foi:
+
+1. Pré-processamento do conteúdo dos diários oficiais;
+2. Desenvolvimento de mecanismos de busca no conteúdo processado;
+3. Definição dos termos de busca a serem utilizados para identificar conteúdo processado;
+4. Avaliação quantitativa e qualitativa dos resultados de busca.
 
 
->> **1** Pré-processamento
+## Pré-processamento de um Diário Municipal
 
-Processo realizado previamente pelo Querido Diário, consiste em mapear os Diários Oficiais Municipais, obter raspadores para cada um destes e ser capaz de converter os documentos em texto puro e metadados, armazenando através do ElasticSearch. 
+(LCOELHO desenvolver)
+Processo realizado previamente pelo Querido Diário, consiste em mapear os Diários Oficiais Municipais, obter raspadores para cada um destes e ser capaz de converter os documentos em texto puro e metadados, armazenando através do ElasticSearch.
 
->> **2** Mecanismos de Busca
+- Escolher um diário oficial para colar a foto aqui;
+- Colar uma foto mostrando o texto extraído de forma bruta;
+- Explicar expressões regulares;
+- Eliminação de caracteres duplicados, marcações de parágrafos;
+- Mostrar diário limpo.
 
-A recuperação de informações (RI) pode ser feita através de um sistema que funciona a partir de diferentes mecanismos, sejam análise textual, filtragem de informação por meio da extração de stopwords, técnicas de redução de palavras a seus radicais, técnicas de indexação, arquivo invertido, modelos matemáticos e estatísticos para a representação de documentos, de consultas e a definição de coeficientes de similaridades, estruturas de categorização e de expansão de consultas por meio da utilização de Tesauro [Souza, 2005](https://repositorio.ufmg.br/bitstream/1843/RRSA-6GGGUF/1/doutorado___renato_rocha_souza.pdf).
+## Mecanismos de busca
 
-Para este projeto foram utilizados seis tipos de busca, a saber:
+Nós utilizamos o sistema de dados Elasticsearch, da empresa Elastic, que é uma das plataformas mais populares de armazenamento de dados textuais e recuperação de conteúdo, uma vez que é um sistema seguro, eficiente e de baixo custo. A plataforma contém ferramentas de busca textual em que a pessoa usuária define termos de busca (e.g. "cão chupando manga") e forma de busca (e.g. busca que contenham todos os termos entre aspas). Para este projeto, utilizou-se os seis tipos de busca a seguir:
 
-  *_Intervalar_*
+### Intervalar
+
   Retorna documentos com base na ordem e proximidade dos termos correspondentes. A consulta de intervalos usa regras de correspondência, construídas a partir de um pequeno conjunto de definições. Essas regras são então aplicadas aos termos de um campo especificado. As definições produzem sequências de intervalos mínimos que abrangem termos em um corpo de texto. 
-    *Exemplo*:
+    **Exemplo**:
    
-  *_Querystring_*
-  Aqui é utilizada uma sintaxe para analisar e dividir o conjunto de caracteres de consulta fornecida com base em operadores booleanos como AND, NOT e OR. Cada texto é analisado independente e após isso são retornados os documentos. Também é possível utilizar a consulta query_string para criar uma pesquisa complexa que inclui caracteres versáteis, pesquisas em vários campos e muito mais. A desvantagem desse método é que se a sintaxe for inválida um erro será retornado na busca.
-    *Exemplo*:
+### Querystring
+
+Aqui é utilizada uma sintaxe para analisar e dividir o conjunto de caracteres de consulta fornecida com base em operadores booleanos como AND, NOT e OR. Cada texto é analisado independente e após isso são retornados os documentos. Também é possível utilizar a consulta query_string para criar uma pesquisa complexa que inclui caracteres versáteis, pesquisas em vários campos e muito mais. A desvantagem desse método é que se a sintaxe for inválida um erro será retornado na busca.
+   **Exemplo**:
     
-  *_Booleana_*
-  Uma consulta que corresponde a documentos correspondentes a combinações booleanas de outras consultas. A consulta é construída usando uma ou mais cláusulas booleanas, cada cláusula com uma ocorrência digitada. Os tipos de ocorrência são:
+### Booleana
+
+Uma consulta que corresponde a documentos correspondentes a combinações booleanas de outras consultas. A consulta é construída usando uma ou mais cláusulas booleanas, cada cláusula com uma ocorrência digitada. Os tipos de ocorrência são:
       _must_    : O termo deve, obrigatoriamente, aparecer no documento.
       _filter_  : O termo deve aparecer nos documentos correspondentes.
       _should_  : O termo deve aparecer no documento.
       _must_not_: O termo não deve, obrigatoriamente, aparecer no documento.
       
+   **Exemplo**:
+   
  
-  *_Boosting_*
-  Retorna documentos que correspondem a uma consulta positiva enquanto reduz a pontuação de relevância dos documentos que correspondem a uma consulta negativa. Essa consulta permite rebaixar certos documentos sem excluí-los dos resultados da pesquisa.
+### Boosting
+
+Retorna documentos que correspondem a uma consulta positiva enquanto reduz a pontuação de relevância dos documentos que correspondem a uma consulta negativa. Essa consulta permite rebaixar certos documentos sem excluí-los dos resultados da pesquisa.
+
+   **Exemplo**:
       
-  *_Fuzzy_*
-  Retorna documentos que contém termos semelhantes ao termo de pesquisa medido por uma distância de edição. Uma distância de edição é o número de alterações de um caractere necessárias para transformar um termo em outro. Essas mudanças podem incluir:
+### Fuzzy
+
+Retorna documentos que contém termos semelhantes ao termo de pesquisa medido por uma distância de edição. Uma distância de edição é o número de alterações de um caractere necessárias para transformar um termo em outro. Essas mudanças podem incluir:
 
 - Mudando um caracter que muda a palavra (gato -> galo)
 - Removendo caracteres (acreditar -> creditar)
@@ -41,19 +60,24 @@ Para este projeto foram utilizados seis tipos de busca, a saber:
 - Transpondo caracteres adjacentes (papo -> popa)
      
    Para encontrar termos semelhantes, a consulta do tipo fuzzy cria um conjunto de todas as variações ou expansões possíveis do termo de pesquisa dentro de uma distância de edição especificada. A consulta retorna correspondências exatas para cada expansão.
+   
+   **Exemplo**:
   
-  *_Express?es regulares_*
-   Retorna documentos que contém termos que correspondem a uma expressão regular. Uma expressão regular é uma maneira de combinar padrões em dados usando caracteres de espaço reservado, chamados de operadores. Para obter uma lista de operadores suportados pela consulta regexp.
+### Expressões regulares (Regexp)
 
->> **3** Stopwords e Stoplists
+Retorna documentos que contém termos que correspondem a uma expressão regular. Uma expressão regular é uma maneira de combinar padrões em dados usando caracteres de espaço reservado, chamados de operadores. Para obter uma lista de operadores suportados pela consulta regexp.
+
+   **Exemplo**:
+
+## Anotação e Controle de Qualidade
    
-   O processo de criação das palavras de busca é acompanhado de um longo trabalho envolvendo uma curadoria de jornalistas especializados. Foram selecionados voluntariamente sete jornalistas para compor a equipe de curadoria e avaliar os documentos coletados através dos mecanismos de busca e avaliar qualitativamente os resultados. 
+O processo de criação das palavras de busca é acompanhado de um longo trabalho envolvendo uma curadoria de jornalistas especializados. Foram selecionados voluntariamente sete jornalistas para compor a equipe de curadoria e avaliar os documentos coletados através dos mecanismos de busca e avaliar qualitativamente os resultados. 
    
-   Para esta fase do projeto os curadores irão avaliar cerca de 776 termos de busca. Na primeira etapa serão gerados 488 termos acompanhados de excertos dos Diários Oficiais coletados, denominados de _highlights_. A partir dos resultados da primeira etapa será necessário mais duas avaliações de 144 termos para concluir o processo.
+Para esta fase do projeto os curadores irão avaliar cerca de 776 termos de busca. Na primeira etapa serão gerados 488 termos acompanhados de excertos dos Diários Oficiais coletados, denominados de _highlights_. A partir dos resultados da primeira etapa será necessário mais duas avaliações de 144 termos para concluir o processo.
    
-   A definição das stopwords e stoplists é crucial para a determinação do escopo do projeto, ou seja, o que será encontrado na platadorma Diário do Clima. 
+A definição das stopwords e stoplists é crucial para a determinação do escopo do projeto, ou seja, o que será encontrado na platadorma Diário do Clima. 
    
->> **4** Avaliação de precisão
+## Avaliação de precisão
 
 A avaliação de precisão é realizada concomitantemente com as criações de stopwords e stoplists, já que estas duas etapas são interdependentes. 
 
@@ -71,8 +95,6 @@ A avaliação de precisão é realizada concomitantemente com as criações de s
   
  A análise qualitativa será realizada para observar o conteúdo dos highlights e comentários realizados. Assim, será possível avaliar se os highlights selecionados são adequados ao escopo do documento que ele faz parte
    
->> **5** Refinamento
-
    Após a coleta dos documentos e definição dos termos de busca será feita uma nova rodada de coleta de documentos para refinar os processos de busca. Essa etapa é necessária para deixar a plataforma mais eficaz e amigável, bem como melhorar o processamento dos documentos. 
    
    Esse processo vai de encontro com o que foi elencado na seção de Política ambiental no Brasil, onde puderam ser explorados os principais marcos da política ambiental brasileira bem como a avaliação dos documentos pelos curadores.Dessa forma, a plataforma será um grande êxito para os jornalistas e comunicadores que acompanham nóticias sobre clima e meio ambiente no Brasil. 
@@ -83,9 +105,4 @@ A avaliação de precisão é realizada concomitantemente com as criações de s
 ## Mecanismos de Busca
 
 ## Termos de Interesse
-
-## Anotação e Controle de Qualidade
-
-
-
 
