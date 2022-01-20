@@ -4,7 +4,6 @@ A partir dos passos traçados na metodologia foi possível criar um aplicativo o
 
 Essa plataforma é uma interação com o Querido Diário, portanto, recebe uma fatia daqueles Diários que contemplam o tema do Diário do Clima. Pelo mesmo motivo, é possível fazer buscas e filtros no próprio Querido Diário e conseguir uma parcela do mesmo tipo de retorno.
 
-
 ## Geral
 
 ## Exemplo 01
