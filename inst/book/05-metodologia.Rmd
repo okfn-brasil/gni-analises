@@ -17,7 +17,6 @@ Para selecionar os diários e os conteúdos relevantes para as pessoas usuárias
 - Mostrar diário limpo.
 
 ## Mecanismos de Busca
-
 Nós utilizamos o sistema de dados Elasticsearch, da empresa Elastic, que é uma das plataformas mais populares de armazenamento de dados textuais e recuperação de conteúdo, uma vez que é um sistema seguro, eficiente e de baixo custo. A plataforma contém ferramentas de busca textual em que a pessoa usuária define termos de busca (e.g. "cão chupando manga") e forma de busca (e.g. busca que contenham todos os termos entre aspas). Para este projeto, utilizou-se os seis tipos de busca a seguir:
 
 ### Intervalar
