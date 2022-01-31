@@ -22,43 +22,45 @@ Nós utilizamos o sistema de dados Elasticsearch, da empresa Elastic, que é uma
 ### Intervalar
 Busca que define termos que iniciais e finais de um intervalo de conteúdo dentro de um Diário Oficial para que o documento seja retornado à pessoa usuária. A pessoa pode também definir o tamanho do intervalo de modo que os documentos retornados contenham termos iniciais próximos ou distantes dos termos finais.
 
-**Exemplo:** nós estamos interessados em encontrar diários que contenham os termos "preservação" e "ambiental". Contudo, se estes termos estiverem muito distantes, podemos encontrar um contexto em que "preservação" não diz respeito à temática ambiental e que "ambiental" se refere a outro contexto que não de preservação (e.g. "preservação de direitos trabalhistas" no início do diário e "licenciamento ambiental" no final). A busca intervalar permite que definamos uma distância máxima entre estes dois termos de modo que seja mais fácil retornar o conteúdo desejado (e.g. "**preservação** de parque nacional de acordo com boas práticas de política **ambiental** brasileira.", distância de 10 termos entre as palavras buscadas).
+**Como funciona:**  Se o interesse for em encontrar diários que contenham os termos "preservação" e "ambiental", a busca intervalar permite que definamos uma distância máxima entre estes dois termos de modo que seja mais fácil retornar o conteúdo desejado (e.g. "**preservação** de parque nacional de acordo com boas práticas de política **ambiental** brasileira.", distância de 10 termos entre as palavras buscadas). Contudo, se estes termos estiverem muito distantes, podemos encontrar um contexto em que "preservação" não diz respeito à temática ambiental e que "ambiental" se refere a outro contexto que não de preservação (e.g. "preservação de direitos trabalhistas" no início do diário e "licenciamento ambiental" no final)
 
 ### Querystring
-Busca em que se utiliza uma sintaxe própria do Elasticsearch para analisar e dividir o conjunto de caracteres de consulta fornecido com base em operadores booleanos como AND ("e"), NOT ("não") e OR ("ou"). Cada termos é primeiro analisado independente e depois analisado em conjunto segundo os operadores acima. Nos casos em que a busca seja inteiramente verdadeira (e.g. "preservação AND ambiental", independente da ordem, seria uma busca verdadeira nos exemplos da seção anterior), o diário é retornado.
+Busca em que se utiliza uma sintaxe própria do Elasticsearch para analisar e dividir o conjunto de caracteres de consulta fornecido com base em operadores booleanos como AND ("e"), NOT ("não") e OR ("ou"). Cada termos é primeiro analisado independente e depois analisado em conjunto segundo os operadores acima. 
 
-**Exemplo:** (LCOELHO preencher exemplo)
-
+**Como funciona:** A busca analisa as palavras na frase que se deseja encontrar no diário de maneira independente. Todas as palavras são convertidas em _tokens_ (após passar pelo processo de _tokenização_, as frases são separadas em pedaços chamados de tokens - não é possível chamá-los de palavras pois um token pode ser um valor monetário, como R$ 20,00) caso a condição seja verdadeira o diário será retornado. Tomando o exemplo "preservação AND ambiental" a busca será válida caso o diário contenha os dois termos, nesse caso o diário seria retornado na pesquisa.
+ 
 ### Booleana
-(LCOELHO seguir template acima)
 Uma consulta que corresponde a documentos correspondentes a combinações booleanas de outras consultas. A consulta é construída usando uma ou mais cláusulas booleanas, cada cláusula com uma ocorrência digitada. Os tipos de ocorrência são:
     _must_    : O termo deve, obrigatoriamente, aparecer no documento.
     _filter_  : O termo deve aparecer nos documentos correspondentes.
     _should_  : O termo deve aparecer no documento.
     _must_not_: O termo não deve, obrigatoriamente, aparecer no documento.
 
-**Exemplo:** (LCOELHO preencher exemplo)
+**Como funciona:** A estrutura requer o conhecimento das palavras a serem procuradas no diário e as condições para que o retorno desse determinado diário seja válido. Portanto, continuando no mesmo exemplo, deveríamos encontrar um _must_: {preservação}, {ambiental} podendo adicionar uma camada de _must_not_: {direitos trabalhistas}, ou ainda _filter_: {política nacional do meio ambiente}, caso o interesse fosse descobrir os municípios que estão executando ações de preservação voltadas às diretrizes da PNMA.
 
 ### Boosting
-(LCOELHO seguir template acima)
 Retorna documentos que correspondem a uma consulta positiva enquanto reduz a pontuação de relevância dos documentos que correspondem a uma consulta negativa. Essa consulta permite rebaixar certos documentos sem excluí-los dos resultados da pesquisa.
 
-**Exemplo:** (LCOELHO preencher exemplo)
+**Como funciona:** Partindo da premissa que se uma palavra está contida no título do diário é provável que este tipo de conteúdo seja o tema central do documento, neste caso é de interesse que o boosting esteja relacionado com a presença das palavras: {preservação, ambiental} no título. Dessa forma, para aqueles diários que contenham essas palavras no título será dada uma nota de relevância maior do que aqueles que só contenham essas palavras no corpo do texto.
 
 ### Fuzzy
 Retorna documentos que contém termos semelhantes ao termo de pesquisa medido por uma distância de edição. Uma distância de edição é o número de alterações de um caractere necessárias para transformar um termo em outro. Essas mudanças podem incluir:
 
-**Exemplo**:
+**Como funciona**: A própria busca fuzzy a partir de uma distância informada consegue achar similaridades nas palavras pela criação de um conjunto de variação a partir dos artifícios exemplificados abaixo:
 - Mudando um caractere que muda a palavra (gato -> galo)
 - Removendo caracteres (acreditar -> creditar)
 - Inserindo caracteres (calor -> calorímetro)
 - Transpondo caracteres adjacentes (papo -> popa)
 
+É possível inserir apenas uma parte da palavra, por exemplo: {preser} e {ambi}. Dessa forma, a pesquisa mesmo assim irá retornar documentos que contenham as palavras preservação mas também pode retornar palavras como "preservado", "reservado", dentre outros. É importante salientar que todas esssas modificações nas palavras podem ser controladas na busca, a partir da distância e também autorizando os atributos que serão utilizados para separarem as palavras nesses conjuntos.
+
 ### Expressões regulares (Regexp)
 
-Retorna documentos que contém termos que correspondem a uma expressão regular. Uma expressão regular é uma maneira de combinar padrões em dados usando caracteres de espaço reservado, chamados de operadores. Para obter uma lista de operadores suportados pela consulta regexp.
+Retorna documentos que contém termos que correspondem a uma expressão regular. Uma expressão regular é uma maneira de combinar padrões em dados usando caracteres de espaço reservado, chamados de operadores. 
 
-**Exemplo**: (LCOELHO preencher exemplo)
+**Como funciona**: É possível encontrar estruturas de frases completas utilizando os operadores das expressões regulares. A busca pode retornar frases como "Texto preservação ambiental texto no município texto {ano}". Neste tipo de pesquisa o interesse é buscar diários que contenham o ano de criação, implementação ou outro tipo de informação relacionado ao período das ações de preservação ambiental implementadas no município. Portanto, não é necessário saber exatamente o que está presente no texto, mas apenas com operadores de expressões regulares é possível construir uma frase em que o produto seja algo de interesse para a pesquisa.
+
+_**(pergunta)As consultas podem ser feitas em conjunto? Por exemplo, integrar bool com boosting?**_
 
 ## Anotação e Controle de Qualidade
    
@@ -67,12 +69,12 @@ O processo de criação das palavras de busca é acompanhado de um longo trabalh
 Para esta fase do projeto os curadores irão avaliar cerca de 776 termos de busca. Na primeira etapa serão gerados 488 termos acompanhados de excertos dos Diários Oficiais coletados, denominados de _highlights_. A partir dos resultados da primeira etapa será necessário mais duas avaliações de 144 termos para concluir o processo.
    
 A definição das stopwords e stoplists é crucial para a determinação do escopo do projeto, ou seja, o que será encontrado na platadorma Diário do Clima.
-   
+
 ## Avaliação de precisão
 
 A avaliação de precisão é realizada concomitantemente com as criações de stopwords e stoplists, já que estas duas etapas são interdependentes. 
 
-   Na avaliação feita pelos curadores, existem dois parâmetros que podem ser explorados, um deles diz respeito se o documento possui o escopo adequado (positivo) ou não (negativo) e o outro é com relação aos comentários dos curadores no documento, sendo este indicador opcional. Na distribuição dos termos, há ainda mais um parâmetro que também pode ser adicionado, que é a qualidade dos documentos baseados nas palavras coletadas via ElasticSearch, assim os primeiros documentos possuem uma qualidade teórica maior do que aqueles que vem por último para cada termo de busca.
+   Na avaliação feita pelos curadores, existem dois parâmetros que podem ser explorados, um deles diz respeito ao escopo do documento se adequado (positivo) ou não (negativo) e o outro é com relação aos comentários dos curadores no documento, sendo este indicador opcional. Na distribuição dos termos, há ainda mais um parâmetro que também pode ser adicionado, que é a qualidade dos documentos baseados nas palavras coletadas via ElasticSearch, assim os primeiros documentos possuem uma qualidade teórica maior do que aqueles que vem por último para cada termo de busca.
    
    Todos os documentos são avaliados, portanto é possível tirar conclusões muito importantes para o desenvolvimento das buscas nos Diários Oficiais dos municípios. As avaliações serão divididas em análises quantitativa e qualitativa.
 
@@ -81,6 +83,25 @@ A avaliação de precisão é realizada concomitantemente com as criações de s
  A análise quantitativa se baseará em duas principais relações: Índices positivos e negativos de busca, relação entre qualidade do documento ElasticSearch versus qualidade pela Curadoria.
  
  O primeiro inferirá sobre a distribuição das avaliaçõe negativas e positivas dos documentos, podendo então saber se os documentos coletados estão coerentes com o objetivo da plataforma. O segundo ajudará a melhorar a qualidade traçando uma relação entre os índices de qualidade pelo ElasticSearch e a quantidade de índices positivos ou negativos daquela busca.
+
+Existem alguns indicadores importantes que servem para avaliar os resultados da busca. Isso é realizado com o auxílio da equipe de curadores, em que proporcionarão sobre a qualidade do resultado retornado, classificando-o em resultado positivo ou negativo. Nesse caso é possível avaliar: 
+**1) Acurácia**
+Diários retornados positivos dividido pelo total dos resultados.
+
+**2) Recall**
+Retorna todos aqueles casos relevantes, sendo:
+Verdadeiros positivos dividido pela soma dos verdadeiros positivos e falsos negativos
+
+**3) Precisão**
+
+Verdadeiros positivos dividido pela soma dos verdadeiros positivos e falsos positivos
+
+Como o indicador **2** e **3** possuem relações complementares então foi desenvolvido outro indicador que avalia o composto total.
+
+**4) F1-Score**
+F1 = 2* (precisão*recall)/(precisão+recall)
+
+TF-IDF = term frequency*inverse document frequency
 
   * **Qualitativa**
   
